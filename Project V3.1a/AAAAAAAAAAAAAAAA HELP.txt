@@ -1,0 +1,36 @@
+Corruption:
+
+ - you may corrupt Mom, sister and Jessica in this version.
+ - to progress with Mom's corruption, make sure that your family always have enough food at home.
+ - Mom's corruptions starts after you make her admit you the head of the family (talk to her in her room)
+   Mom's submission grows automatically while time passes and the food is enough.
+ - Sister's corruption starts when she comes to your room on the day 2 and asks you to find batteries for her.
+ - Jessica's submission grows when you defeat her in combat. 
+ - Lisa can't be corrupted in the current version at all, only in the later versions
+
+Battles:
+ - to success in battles make sure that you keep your energy on a high level,
+   use mental shield from time to time
+ - you have the highest chance to avoid enemy attack or to deal damage when your energy
+   level (the blue bar above your head) is high. Your oppponent is the most vulnerable when 
+   his energy level is low.
+ - to defeat Jessica you need to steal her clothes using a special skill - Dark Theft
+ - It is recommended to use the Dark Theft on a stunned person to succeed
+ - It is recommended to use the Death Hand on a stunned person to succeed
+
+Skills:
+ - you may increase your skills or learn new skils in the library (click on the book)
+   you will need experience points to learn skills.
+   you get 2 experience point each time you defeat a demon
+
+Storyline:
+ - you find Lisa's hideout accidentally during your raids
+ - if you don't know how to persuade Lisa to move in your house, bring her a demon heart
+ - to get a demon heart, learn a suitable skill at the police station
+ - you find a police station accidentally during your raids
+
+You had some items and can't find them now?
+ - look for food in the fridge in the kitchen
+ - look for demon hearts in the fridge in the kitchen
+ - look for batteries, chokolate, wine in the bag in your room
+ - look for potions in the bag in your room
