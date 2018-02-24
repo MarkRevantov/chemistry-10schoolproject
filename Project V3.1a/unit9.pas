@@ -6,13 +6,47 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
-  StdCtrls, ExtCtrls;
+  StdCtrls, ExtCtrls, Types;
 
 type
 
   { TForm6 }
 
   TForm6 = class(TForm)
+    Button1: TButton;
+    Button10: TButton;
+    Button11: TButton;
+    Button12: TButton;
+    Button13: TButton;
+    Button14: TButton;
+    Button15: TButton;
+    Button16: TButton;
+    Button17: TButton;
+    Button18: TButton;
+    Button19: TButton;
+    Button2: TButton;
+    Button20: TButton;
+    Button21: TButton;
+    Button22: TButton;
+    Button23: TButton;
+    Button24: TButton;
+    Button25: TButton;
+    Button26: TButton;
+    Button27: TButton;
+    Button28: TButton;
+    Button29: TButton;
+    Button3: TButton;
+    Button30: TButton;
+    Button31: TButton;
+    Button32: TButton;
+    Button33: TButton;
+    Button34: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    Button9: TButton;
     Label1: TLabel;
     Label10: TLabel;
     Label11: TLabel;
@@ -26,9 +60,40 @@ type
     Label19: TLabel;
     Label2: TLabel;
     Label20: TLabel;
+    Label21: TLabel;
+    Label22: TLabel;
+    Label23: TLabel;
+    Label24: TLabel;
+    Label25: TLabel;
+    Label26: TLabel;
+    Label27: TLabel;
+    Label28: TLabel;
+    Label29: TLabel;
     Label3: TLabel;
+    Label30: TLabel;
+    Label31: TLabel;
+    Label32: TLabel;
+    Label33: TLabel;
+    Label34: TLabel;
+    Label35: TLabel;
+    Label36: TLabel;
+    Label37: TLabel;
+    Label38: TLabel;
+    Label39: TLabel;
     Label4: TLabel;
+    Label40: TLabel;
+    Label41: TLabel;
+    Label42: TLabel;
+    Label43: TLabel;
+    Label44: TLabel;
+    Label45: TLabel;
+    Label46: TLabel;
+    Label47: TLabel;
+    Label48: TLabel;
+    Label49: TLabel;
     Label5: TLabel;
+    Label50: TLabel;
+    Label51: TLabel;
     Label6: TLabel;
     Label7: TLabel;
     Label8: TLabel;
@@ -132,11 +197,15 @@ type
     TabSheet7: TTabSheet;
     TabSheet8: TTabSheet;
     TabSheet9: TTabSheet;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure PageControl1Change(Sender: TObject);
     procedure Pan1Click(Sender: TObject);
     procedure Pan2Click(Sender: TObject);
     procedure Pan4Click(Sender: TObject);
+    procedure TabSheet1ContextPopup(Sender: TObject; MousePos: TPoint;
+      var Handled: Boolean);
   private
 
   public
@@ -147,7 +216,7 @@ var
   Form6: TForm6;
 
 implementation
-uses Unit2;
+uses Unit2, Unit1;
 
 {$R *.lfm}
 
@@ -156,6 +225,26 @@ uses Unit2;
 procedure TForm6.FormCreate(Sender: TObject);
 begin
  PageControl1.Tabindex :=0;
+end;
+
+procedure TForm6.Button1Click(Sender: TObject);
+begin
+  Form6.Tag:=0;
+     PageControl1.Tabindex :=0;
+     PageControl1.Tag :=0    ;
+     Label18.Caption:=IntToStr(0);
+     Unit9.Form6.Hide;
+     Unit2.Form2.Show;
+end;
+
+procedure TForm6.Button2Click(Sender: TObject);
+begin
+     Form6.Tag:=0;
+     PageControl1.Tabindex :=0;
+     PageControl1.Tag :=0      ;
+     Label18.Caption:=IntToStr(0);
+     Unit9.Form6.Hide;
+     Unit1.Form1.Show;
 end;
 
 procedure TForm6.PageControl1Change(Sender: TObject);
@@ -179,6 +268,12 @@ begin
 end;
 
 procedure TForm6.Pan4Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm6.TabSheet1ContextPopup(Sender: TObject; MousePos: TPoint;
+  var Handled: Boolean);
 begin
 
 end;
