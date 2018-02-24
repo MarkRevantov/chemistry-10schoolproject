@@ -1,11 +1,11 @@
 object Form2: TForm2
-  Left = 127
+  Left = 472
   Height = 750
-  Top = 466
+  Top = 73
   Width = 950
   Caption = 'Тесты'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 750
+  ClientWidth = 950
   Constraints.MinHeight = 750
   Constraints.MinWidth = 950
   OnClose = FormClose
@@ -16249,10 +16249,10 @@ object Form2: TForm2
   end
   object Test1: TPanel
     Cursor = crHandPoint
-    Left = 16
+    Left = 160
     Height = 64
-    Top = 88
-    Width = 552
+    Top = 120
+    Width = 620
     Anchors = [akLeft, akRight]
     Caption = 'Определение класса химического вещества'
     Color = 16364957
@@ -16270,10 +16270,10 @@ object Form2: TForm2
   end
   object Test2: TPanel
     Cursor = crHandPoint
-    Left = 16
+    Left = 160
     Height = 64
-    Top = 184
-    Width = 552
+    Top = 216
+    Width = 620
     Anchors = [akLeft, akRight]
     Caption = 'Определение типа связи в химическом веществе'
     Color = 16364957
@@ -16291,10 +16291,10 @@ object Form2: TForm2
   end
   object Test3: TPanel
     Cursor = crHandPoint
-    Left = 16
+    Left = 160
     Height = 64
-    Top = 280
-    Width = 552
+    Top = 312
+    Width = 620
     Anchors = [akLeft, akRight]
     Caption = 'Определение вещества'
     Color = 16364957
@@ -16307,7 +16307,39 @@ object Form2: TForm2
     ParentColor = False
     ParentFont = False
     TabOrder = 2
-    OnClick = Test3Click
+    OnClick = Test4Click
     OnMouseMove = Test3MouseMove
+  end
+  object Test4: TPanel
+    Cursor = crHandPoint
+    Left = 160
+    Height = 64
+    Top = 552
+    Width = 620
+    Anchors = [akLeft, akRight]
+    Caption = 'Назад в меню'
+    Color = 16364957
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Test4Click
+  end
+  object Label1: TLabel
+    Left = 400
+    Height = 63
+    Top = 8
+    Width = 154
+    Caption = 'Тесты'
+    Font.Color = clMenu
+    Font.Height = 64
+    Font.Name = 'Arial'
+    ParentColor = False
+    ParentFont = False
   end
 end

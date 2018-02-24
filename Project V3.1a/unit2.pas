@@ -14,9 +14,11 @@ type
 
   TForm2 = class(TForm)
     Image1: TImage;
+    Label1: TLabel;
     Test1: TPanel;
     Test2: TPanel;
     Test3: TPanel;
+    Test4: TPanel;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure Image1Click(Sender: TObject);
     procedure Image1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
@@ -27,7 +29,7 @@ type
     procedure Test2Click(Sender: TObject);
     procedure Test2MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
-    procedure Test3Click(Sender: TObject);
+    procedure Test4Click(Sender: TObject);
     procedure Test3MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
   private
@@ -84,10 +86,10 @@ begin
    Test2.Color:=clTeal;
 end;
 
-procedure TForm2.Test3Click(Sender: TObject);
+procedure TForm2.Test4Click(Sender: TObject);
 begin
   Unit2.Form2.Hide;
-  Unit10.Form7.Show;
+  Unit1.Form1.Show;
 end;
 
 procedure TForm2.Test3MouseMove(Sender: TObject; Shift: TShiftState; X,
