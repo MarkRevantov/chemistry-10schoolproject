@@ -1,7 +1,7 @@
 object Form7: TForm7
-  Left = 1045
+  Left = 772
   Height = 705
-  Top = 192
+  Top = 442
   Width = 950
   Caption = 'Form7'
   ClientHeight = 705
@@ -20,7 +20,7 @@ object Form7: TForm7
     TabIndex = 0
     TabOrder = 0
     object TabSheet1: TTabSheet
-      Caption = 'TabSheet1'
+      Caption = 'Неверно, правильным ответом будет : Si'
       ClientHeight = 1034
       ClientWidth = 1912
       object Label15: TLabel
@@ -58,7 +58,7 @@ object Form7: TForm7
         ParentColor = False
         ParentFont = False
         TabOrder = 0
-        OnClick = Pan1Click
+        OnClick = Pan2Click
         OnMouseMove = Pan1MouseMove
         OnMouseUp = Pan1MouseUp
       end
@@ -79,7 +79,7 @@ object Form7: TForm7
         ParentColor = False
         ParentFont = False
         TabOrder = 1
-        OnClick = Pan2Click
+        OnClick = Pan1Click
       end
       object Pan3: TPanel
         Cursor = crHandPoint
@@ -98,6 +98,7 @@ object Form7: TForm7
         ParentColor = False
         ParentFont = False
         TabOrder = 2
+        OnClick = Pan1Click
       end
       object Pan4: TPanel
         Cursor = crHandPoint
@@ -116,6 +117,7 @@ object Form7: TForm7
         ParentColor = False
         ParentFont = False
         TabOrder = 3
+        OnClick = Pan1Click
       end
     end
     object TabSheet2: TTabSheet

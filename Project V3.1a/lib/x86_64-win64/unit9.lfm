@@ -1,7 +1,7 @@
 object Form6: TForm6
-  Left = 423
+  Left = 263
   Height = 705
-  Top = 393
+  Top = 129
   Width = 950
   Caption = 'Определение типа связи в химическом веществе'
   ClientHeight = 705
@@ -16,32 +16,15 @@ object Form6: TForm6
     Height = 713
     Top = 0
     Width = 952
-    ActivePage = TabSheet15
-    TabIndex = 14
+    ActivePage = TabSheet17
+    TabIndex = 16
     TabOrder = 0
     OnChange = PageControl1Change
     object TabSheet1: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Ковалентная неполярная связь'
+      Caption = 'H2'
       ClientHeight = 685
       ClientWidth = 944
-      object Label1: TLabel
-        Left = 16
-        Height = 57
-        Top = 56
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:H₂'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 55
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
-      end
+      OnContextPopup = TabSheet1ContextPopup
       object Pan2: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -80,25 +63,6 @@ object Form6: TForm6
         TabOrder = 1
         OnClick = Pan1Click
       end
-      object Pan3: TPanel
-        Cursor = crHandPoint
-        Left = 199
-        Height = 64
-        Top = 360
-        Width = 552
-        Caption = 'Ионная связь'
-        Color = clYellow
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Pan2Click
-      end
       object Pan4: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -115,7 +79,7 @@ object Form6: TForm6
         Font.Style = [fsBold]
         ParentColor = False
         ParentFont = False
-        TabOrder = 3
+        TabOrder = 2
         OnClick = Pan2Click
       end
       object Pan5: TPanel
@@ -134,12 +98,97 @@ object Form6: TForm6
         Font.Style = [fsBold]
         ParentColor = False
         ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+      object Label22: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label24: TLabel
+        Left = 440
+        Height = 73
+        Top = 64
+        Width = 44
+        Caption = 'H'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan3: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
         TabOrder = 4
         OnClick = Pan2Click
       end
+      object Label1: TLabel
+        Left = 480
+        Height = 52
+        Top = 88
+        Width = 24
+        Caption = '2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button1: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button2: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
     end
     object TabSheet2: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Ковалентная полярная связь'
+      Caption = 'HCl'
       ClientHeight = 685
       ClientWidth = 944
       object Pan6: TPanel
@@ -162,15 +211,15 @@ object Form6: TForm6
         OnClick = Pan2Click
       end
       object Label2: TLabel
-        Left = 16
+        Left = 24
         Height = 57
-        Top = 56
+        Top = 8
         Width = 874
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:HCl'
+        Caption = 'Определите тип связи в следующем веществе:'
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 52
+        Font.Height = 46
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -255,9 +304,43 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan2Click
       end
+      object Label23: TLabel
+        Left = 432
+        Height = 73
+        Top = 64
+        Width = 89
+        Alignment = taCenter
+        Caption = 'HCl'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button3: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button4: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
     end
     object TabSheet3: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Ионная связь'
+      Caption = 'NaCl'
       ClientHeight = 685
       ClientWidth = 944
       object Pan11: TPanel
@@ -278,24 +361,6 @@ object Form6: TForm6
         ParentFont = False
         TabOrder = 0
         OnClick = Pan2Click
-      end
-      object Label3: TLabel
-        Left = 16
-        Height = 57
-        Top = 56
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:NaCl'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 52
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
       end
       object Pan12: TPanel
         Cursor = crHandPoint
@@ -373,9 +438,60 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan2Click
       end
+      object Label25: TLabel
+        Left = 416
+        Height = 73
+        Top = 64
+        Width = 120
+        Caption = 'NaCl'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label26: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Button5: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button6: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
     end
     object TabSheet4: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Металлическая связь'
+      Caption = 'Fe'
       ClientHeight = 685
       ClientWidth = 944
       object Pan16: TPanel
@@ -396,24 +512,6 @@ object Form6: TForm6
         ParentFont = False
         TabOrder = 0
         OnClick = Pan2Click
-      end
-      object Label4: TLabel
-        Left = 16
-        Height = 57
-        Top = 56
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:Fe'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 55
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
       end
       object Pan17: TPanel
         Cursor = crHandPoint
@@ -491,9 +589,60 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan1Click
       end
+      object Label27: TLabel
+        Left = 448
+        Height = 73
+        Top = 64
+        Width = 61
+        Caption = 'Fe'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label28: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Button7: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button8: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
     end
     object TabSheet5: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Водородная связь'
+      Caption = 'H2O'
       ClientHeight = 685
       ClientWidth = 944
       object Pan21: TPanel
@@ -533,24 +682,6 @@ object Form6: TForm6
         ParentFont = False
         TabOrder = 1
         OnClick = Pan1Click
-      end
-      object Label5: TLabel
-        Left = 16
-        Height = 57
-        Top = 56
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:H₂O'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 52
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
       end
       object Pan23: TPanel
         Cursor = crHandPoint
@@ -609,9 +740,75 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan2Click
       end
+      object Label29: TLabel
+        Left = 424
+        Height = 73
+        Top = 64
+        Width = 107
+        Caption = 'H O'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label30: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label3: TLabel
+        Left = 464
+        Height = 52
+        Top = 85
+        Width = 24
+        Caption = '2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button9: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button10: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
     end
     object TabSheet6: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Ионная связь'
+      Caption = 'KCl'
       ClientHeight = 685
       ClientWidth = 944
       object Pan26: TPanel
@@ -651,24 +848,6 @@ object Form6: TForm6
         ParentFont = False
         TabOrder = 1
         OnClick = Pan2Click
-      end
-      object Label6: TLabel
-        Left = 16
-        Height = 57
-        Top = 56
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:KCl'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 52
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
       end
       object Pan28: TPanel
         Cursor = crHandPoint
@@ -727,9 +906,60 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan1Click
       end
+      object Label31: TLabel
+        Left = 440
+        Height = 73
+        Top = 64
+        Width = 81
+        Caption = 'KCl'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label32: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Button11: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button12: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
     end
     object TabSheet7: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Металлическая связь'
+      Caption = 'K'
       ClientHeight = 685
       ClientWidth = 944
       object Pan31: TPanel
@@ -769,24 +999,6 @@ object Form6: TForm6
         ParentFont = False
         TabOrder = 1
         OnClick = Pan2Click
-      end
-      object Label7: TLabel
-        Left = 16
-        Height = 57
-        Top = 56
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:K'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 55
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
       end
       object Pan33: TPanel
         Cursor = crHandPoint
@@ -845,9 +1057,60 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan2Click
       end
+      object Label21: TLabel
+        Left = 464
+        Height = 73
+        Top = 64
+        Width = 35
+        Caption = 'K'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label49: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Button13: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button14: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
     end
     object TabSheet8: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Ковалентная неполярная связь'
+      Caption = 'F2'
       ClientHeight = 685
       ClientWidth = 944
       object Pan36: TPanel
@@ -887,24 +1150,6 @@ object Form6: TForm6
         ParentFont = False
         TabOrder = 1
         OnClick = Pan2Click
-      end
-      object Label8: TLabel
-        Left = 16
-        Height = 57
-        Top = 56
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:F₂'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 55
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
       end
       object Pan38: TPanel
         Cursor = crHandPoint
@@ -963,21 +1208,31 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan2Click
       end
-    end
-    object TabSheet9: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Водородная связь'
-      ClientHeight = 685
-      ClientWidth = 944
-      object Label9: TLabel
-        Left = 16
+      object Label33: TLabel
+        Left = 448
+        Height = 73
+        Top = 64
+        Width = 36
+        Caption = 'F'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label34: TLabel
+        Left = 24
         Height = 57
-        Top = 56
+        Top = 8
         Width = 874
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:HF'
+        Caption = 'Определите тип связи в следующем веществе:'
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 54
+        Font.Height = 46
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -986,6 +1241,44 @@ object Form6: TForm6
         WordWrap = True
         OptimalFill = True
       end
+      object Label4: TLabel
+        Left = 472
+        Height = 52
+        Top = 88
+        Width = 24
+        Caption = '2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button15: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button16: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet9: TTabSheet
+      Caption = 'HF'
+      ClientHeight = 685
+      ClientWidth = 944
       object Pan41: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -1081,21 +1374,31 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan2Click
       end
-    end
-    object TabSheet10: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Водородная связь'
-      ClientHeight = 685
-      ClientWidth = 944
-      object Label10: TLabel
-        Left = 16
+      object Label35: TLabel
+        Left = 440
+        Height = 73
+        Top = 64
+        Width = 76
+        Caption = 'HF'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label36: TLabel
+        Left = 24
         Height = 57
-        Top = 56
+        Top = 8
         Width = 874
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:Na'
+        Caption = 'Определите тип связи в следующем веществе:'
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 54
+        Font.Height = 46
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -1104,6 +1407,29 @@ object Form6: TForm6
         WordWrap = True
         OptimalFill = True
       end
+      object Button17: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button18: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet10: TTabSheet
+      Caption = 'Na'
+      ClientHeight = 685
+      ClientWidth = 944
       object Pan46: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -1199,21 +1525,16 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan2Click
       end
-    end
-    object TabSheet11: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Ковалентная неполярная связь'
-      ClientHeight = 685
-      ClientWidth = 944
-      object Label11: TLabel
-        Left = 16
+      object Label50: TLabel
+        Left = 24
         Height = 57
-        Top = 56
+        Top = 8
         Width = 874
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:N₂'
+        Caption = 'Определите тип связи в следующем веществе:'
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 55
+        Font.Height = 46
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -1222,6 +1543,44 @@ object Form6: TForm6
         WordWrap = True
         OptimalFill = True
       end
+      object Label51: TLabel
+        Left = 440
+        Height = 73
+        Top = 64
+        Width = 72
+        Caption = 'Na'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button19: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button20: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet11: TTabSheet
+      Caption = 'N2'
+      ClientHeight = 685
+      ClientWidth = 944
       object Pan51: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -1317,21 +1676,31 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan2Click
       end
-    end
-    object TabSheet12: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Водородная связь'
-      ClientHeight = 685
-      ClientWidth = 944
-      object Label12: TLabel
-        Left = 16
+      object Label37: TLabel
+        Left = 448
+        Height = 73
+        Top = 64
+        Width = 45
+        Caption = 'N'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label38: TLabel
+        Left = 24
         Height = 57
-        Top = 56
+        Top = 8
         Width = 874
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:CH₃OH'
+        Caption = 'Определите тип связи в следующем веществе:'
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 49
+        Font.Height = 46
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -1340,6 +1709,44 @@ object Form6: TForm6
         WordWrap = True
         OptimalFill = True
       end
+      object Label5: TLabel
+        Left = 488
+        Height = 52
+        Top = 88
+        Width = 24
+        Caption = '2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button21: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button22: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet12: TTabSheet
+      Caption = 'CH3OH'
+      ClientHeight = 685
+      ClientWidth = 944
       object Pan56: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -1435,21 +1842,31 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan2Click
       end
-    end
-    object TabSheet13: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Металлическая связь'
-      ClientHeight = 685
-      ClientWidth = 944
-      object Label13: TLabel
-        Left = 16
-        Height = 57
+      object Label39: TLabel
+        Left = 384
+        Height = 73
         Top = 56
+        Width = 181
+        Caption = 'CH OH'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label40: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
         Width = 874
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:Cu'
+        Caption = 'Определите тип связи в следующем веществе:'
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 54
+        Font.Height = 46
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -1458,6 +1875,44 @@ object Form6: TForm6
         WordWrap = True
         OptimalFill = True
       end
+      object Label6: TLabel
+        Left = 456
+        Height = 52
+        Top = 80
+        Width = 23
+        Caption = '3'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button23: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button24: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet13: TTabSheet
+      Caption = 'Cu'
+      ClientHeight = 685
+      ClientWidth = 944
       object Pan61: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -1553,21 +2008,31 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan2Click
       end
-    end
-    object TabSheet14: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Ковалентная неполярная связь'
-      ClientHeight = 685
-      ClientWidth = 944
-      object Label14: TLabel
-        Left = 16
-        Height = 57
+      object Label41: TLabel
+        Left = 440
+        Height = 73
         Top = 56
+        Width = 61
+        Caption = 'Cu'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label42: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
         Width = 874
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:O₂'
+        Caption = 'Определите тип связи в следующем веществе:'
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 55
+        Font.Height = 46
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -1576,6 +2041,29 @@ object Form6: TForm6
         WordWrap = True
         OptimalFill = True
       end
+      object Button25: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button26: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet14: TTabSheet
+      Caption = 'O2'
+      ClientHeight = 685
+      ClientWidth = 944
       object Pan66: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -1671,21 +2159,31 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan2Click
       end
-    end
-    object TabSheet15: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Ковалентная неполярная связь'
-      ClientHeight = 685
-      ClientWidth = 944
-      object Label15: TLabel
-        Left = 16
-        Height = 57
+      object Label43: TLabel
+        Left = 448
+        Height = 73
         Top = 56
+        Width = 44
+        Caption = 'O'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label44: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
         Width = 874
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:I₂'
+        Caption = 'Определите тип связи в следующем веществе:'
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 55
+        Font.Height = 46
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -1694,6 +2192,44 @@ object Form6: TForm6
         WordWrap = True
         OptimalFill = True
       end
+      object Label7: TLabel
+        Left = 488
+        Height = 52
+        Top = 80
+        Width = 24
+        Caption = '2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button27: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button28: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet15: TTabSheet
+      Caption = 'I2'
+      ClientHeight = 685
+      ClientWidth = 944
       object Pan71: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -1789,21 +2325,16 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan2Click
       end
-    end
-    object TabSheet16: TTabSheet
-      Caption = 'Неверно, правильным ответом будет: Ионная связь связь'
-      ClientHeight = 685
-      ClientWidth = 944
-      object Label16: TLabel
-        Left = 16
+      object Label45: TLabel
+        Left = 24
         Height = 57
-        Top = 56
+        Top = 8
         Width = 874
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите тип связи в следующем веществе:PbO'
+        Caption = 'Определите тип связи в следующем веществе:'
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 52
+        Font.Height = 46
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -1812,6 +2343,59 @@ object Form6: TForm6
         WordWrap = True
         OptimalFill = True
       end
+      object Label46: TLabel
+        Left = 448
+        Height = 73
+        Top = 64
+        Width = 34
+        Caption = 'I'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label8: TLabel
+        Left = 472
+        Height = 52
+        Top = 88
+        Width = 24
+        Caption = '2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button29: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button30: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet16: TTabSheet
+      Caption = 'PbO'
+      ClientHeight = 685
+      ClientWidth = 944
       object Pan76: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -1907,9 +2491,60 @@ object Form6: TForm6
         TabOrder = 4
         OnClick = Pan1Click
       end
+      object Label47: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label48: TLabel
+        Left = 424
+        Height = 73
+        Top = 64
+        Width = 103
+        Caption = 'PbO'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button31: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button32: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
     end
     object TabSheet17: TTabSheet
-      Caption = 'TabSheet17'
+      Caption = 'Result'
       ClientHeight = 685
       ClientWidth = 944
       object Label17: TLabel
@@ -1924,7 +2559,7 @@ object Form6: TForm6
         ParentFont = False
       end
       object Label18: TLabel
-        Left = 362
+        Left = 344
         Height = 89
         Top = 288
         Width = 36
@@ -1955,9 +2590,24 @@ object Form6: TForm6
         ParentColor = False
         ParentFont = False
       end
-    end
-    object TabSheet18: TTabSheet
-      Caption = 'TabSheet18'
+      object Button33: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 0
+      end
+      object Button34: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 1
+      end
     end
   end
 end
