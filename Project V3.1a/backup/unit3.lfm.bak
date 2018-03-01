@@ -1,13 +1,15 @@
 object Form3: TForm3
-  Left = 844
+  Left = 674
   Height = 705
-  Top = 148
+  Top = 169
   Width = 950
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Определение класса химического вещества'
   ClientHeight = 705
   ClientWidth = 950
+  Constraints.MaxHeight = 10000000
+  Constraints.MaxWidth = 1000000
   Constraints.MinHeight = 705
   Constraints.MinWidth = 950
   OnClose = FormClose
@@ -15,9 +17,9 @@ object Form3: TForm3
   Position = poDesktopCenter
   LCLVersion = '1.8.0.6'
   object Image1: TImage
-    Left = -40
+    Left = 0
     Height = 1237
-    Top = -168
+    Top = -112
     Width = 2407
     Picture.Data = {
       0A544A706567496D6167650CEC0700FFD8FFE000104A46494600010201004800
@@ -16252,24 +16254,25 @@ object Form3: TForm3
     Left = 0
     Height = 1056
     Top = 8
-    Width = 1920
-    ActivePage = TabSheet2
-    TabIndex = 1
+    Width = 952
+    ActivePage = TabSheet45
+    TabIndex = 44
     TabOrder = 0
+    OnChange = PageControl1Change
     object TabSheet1: TTabSheet
-      Caption = 'Вопрос 1'
+      Caption = 'Кислотный оксид'
       ClientHeight = 1028
-      ClientWidth = 1912
+      ClientWidth = 944
       object Label1: TLabel
-        Left = 16
+        Left = 82
         Height = 57
-        Top = 80
-        Width = 874
+        Top = 48
+        Width = 786
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите класс следующего вещества: SO2'
+        Caption = 'Определите класс следующего вещества: '
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -49
+        Font.Height = 57
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -16280,7 +16283,7 @@ object Form3: TForm3
       end
       object Pan2: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 320
         Width = 552
@@ -16295,13 +16298,685 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 1
-        OnClick = Pan2Click
+        OnClick = Pan1Click
       end
       object Pan1: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 208
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan3: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan4: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label13: TLabel
+        Left = 424
+        Height = 75
+        Top = 112
+        Width = 105
+        Caption = 'SO₂'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Основный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan5: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan6: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan7: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan8: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label2: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label14: TLabel
+        Left = 423
+        Height = 75
+        Top = 112
+        Width = 101
+        Caption = 'K₂O'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Несолеобразующий оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan10: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan11: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan9: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan12: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label3: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label15: TLabel
+        Left = 426
+        Height = 75
+        Top = 112
+        Width = 97
+        Caption = 'SiO'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Кислота'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan14: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan15: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan13: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan16: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label4: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label16: TLabel
+        Left = 396
+        Height = 75
+        Top = 112
+        Width = 168
+        Caption = 'H₂SO₄'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Основание'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan19: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan17: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan20: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan18: TPanel
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Side = asrCenter
+        AnchorSideBottom.Side = asrCenter
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 0
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Top = 71
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label5: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label17: TLabel
+        Left = 395
+        Height = 75
+        Top = 112
+        Width = 159
+        Caption = 'NaOH'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan109: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet6: TTabSheet
+      Caption = 'Соль'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan24: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan21: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan23: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan22: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label6: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label18: TLabel
+        Left = 398
+        Height = 75
+        Top = 112
+        Width = 159
+        Caption = 'K₂SO₄'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet7: TTabSheet
+      Caption = 'Основный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan26: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
         Width = 552
         Caption = 'Кислотный оксид'
         Color = 3461932
@@ -16316,591 +16991,9 @@ object Form3: TForm3
         TabOrder = 0
         OnClick = Pan1Click
       end
-      object Pan3: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 432
-        Width = 552
-        Caption = 'Соль'
-        Color = 15794160
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Pan2Click
-      end
-      object Pan4: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 544
-        Width = 552
-        Caption = 'Основание'
-        Color = 15571730
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 3
-        OnClick = Pan2Click
-      end
-    end
-    object TabSheet2: TTabSheet
-      Caption = 'TabSheet2'
-      ClientHeight = 1028
-      ClientWidth = 1912
-      object Label2: TLabel
-        Left = 16
-        Height = 57
-        Top = 80
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите класс следующего вещества: K2O'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 57
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
-      end
-      object Pan5: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 208
-        Width = 552
-        Caption = 'Амфотерный оксид'
-        Color = 12615935
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Pan5Click
-      end
-      object Pan6: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 320
-        Width = 552
-        Caption = 'Несолеобразующий оксид'
-        Color = clOlive
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Pan5Click
-      end
-      object Pan7: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 432
-        Width = 552
-        Caption = 'Основный оксид'
-        Color = clTeal
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Pan7Click
-      end
-      object Pan8: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 544
-        Width = 552
-        Caption = 'Основание'
-        Color = 15571730
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 3
-        OnClick = Pan5Click
-      end
-    end
-    object TabSheet3: TTabSheet
-      Caption = 'TabSheet3'
-      ClientHeight = 1028
-      ClientWidth = 1912
-      object Label3: TLabel
-        Left = 16
-        Height = 57
-        Top = 80
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите класс следующего вещества: SiO'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 57
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
-      end
-      object Pan10: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 320
-        Width = 552
-        Caption = 'Несолеобразующий оксид'
-        Color = clOlive
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Pan10Click
-      end
-      object Pan11: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 432
-        Width = 552
-        Caption = 'Основный оксид'
-        Color = clTeal
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Pan9Click
-      end
-      object Pan9: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 208
-        Width = 552
-        Caption = 'Кислота'
-        Color = clLime
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Pan9Click
-      end
-      object Pan12: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 544
-        Width = 552
-        Caption = 'Соль'
-        Color = 15794160
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 3
-        OnClick = Pan9Click
-      end
-    end
-    object TabSheet4: TTabSheet
-      Caption = 'TabSheet4'
-      ClientHeight = 1028
-      ClientWidth = 1912
-      object Label4: TLabel
-        Left = 16
-        Height = 57
-        Top = 80
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите класс следующего вещества: H2SO4'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 55
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
-      end
-      object Pan14: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 432
-        Width = 552
-        Caption = 'Основный оксид'
-        Color = clTeal
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Pan13Click
-      end
-      object Pan15: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 208
-        Width = 552
-        Caption = 'Кислота'
-        Color = clLime
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Pan15Click
-      end
-      object Pan13: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 320
-        Width = 552
-        Caption = 'Амфотерный оксид'
-        Color = 12615935
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Pan13Click
-      end
-      object Pan16: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 544
-        Width = 552
-        Caption = 'Кислотный оксид'
-        Color = 3461932
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 3
-        OnClick = Pan13Click
-      end
-    end
-    object TabSheet5: TTabSheet
-      Caption = 'TabSheet5'
-      ClientHeight = 1028
-      ClientWidth = 1912
-      object Label5: TLabel
-        Left = 16
-        Height = 57
-        Top = 80
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите класс следующего вещества: NaOH'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 56
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
-      end
-      object Pan19: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 320
-        Width = 552
-        Caption = 'Амфотерный оксид'
-        Color = 12615935
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Pan18Click
-      end
-      object Pan17: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 432
-        Width = 552
-        Caption = 'Основание'
-        Color = 15571730
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Pan17Click
-      end
-      object Pan20: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 544
-        Width = 552
-        Caption = 'Несолеобразующий оксид'
-        Color = clOlive
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Pan18Click
-      end
-      object Pan18: TPanel
-        AnchorSideLeft.Side = asrCenter
-        AnchorSideTop.Control = Label5
-        AnchorSideTop.Side = asrBottom
-        AnchorSideRight.Side = asrCenter
-        AnchorSideBottom.Side = asrCenter
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 208
-        Width = 552
-        Anchors = [akTop, akLeft, akRight, akBottom]
-        BorderSpacing.Top = 71
-        Caption = 'Соль'
-        Color = 15794160
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 3
-        OnClick = Pan18Click
-      end
-    end
-    object TabSheet6: TTabSheet
-      Caption = 'TabSheet6'
-      ClientHeight = 1028
-      ClientWidth = 1912
-      object Label6: TLabel
-        Left = 16
-        Height = 57
-        Top = 80
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите класс следующего вещества: K2SO4'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 55
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
-      end
-      object Pan24: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 208
-        Width = 552
-        Caption = 'Соль'
-        Color = 15794160
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Pan24Click
-      end
-      object Pan21: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 320
-        Width = 552
-        Caption = 'Кислотный оксид'
-        Color = 3461932
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Pan13Click
-      end
-      object Pan23: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 544
-        Width = 552
-        Caption = 'Кислота'
-        Color = clLime
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Pan2Click
-      end
-      object Pan22: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 432
-        Width = 552
-        Caption = 'Основный оксид'
-        Color = clTeal
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 3
-        OnClick = Pan13Click
-      end
-    end
-    object TabSheet7: TTabSheet
-      Caption = 'TabSheet7'
-      ClientHeight = 1023
-      ClientWidth = 1912
-      object Label7: TLabel
-        Left = 16
-        Height = 57
-        Top = 80
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите класс следующего вещества: Na2O'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 56
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
-      end
-      object Pan26: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 432
-        Width = 552
-        Caption = 'Кислотный оксид'
-        Color = 3461932
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Pan25Click
-      end
       object Pan25: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 208
         Width = 552
@@ -16915,11 +17008,11 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 1
-        OnClick = Pan25Click
+        OnClick = Pan1Click
       end
       object Pan28: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 320
         Width = 552
@@ -16934,11 +17027,11 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 2
-        OnClick = Pan25Click
+        OnClick = Pan1Click
       end
       object Pan27: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 544
         Width = 552
@@ -16953,219 +17046,16 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 3
-        OnClick = Pan27Click
+        OnClick = Pan2Click
       end
-    end
-    object TabSheet8: TTabSheet
-      Caption = 'TabSheet8'
-      ClientHeight = 1023
-      ClientWidth = 1912
-      object Label8: TLabel
-        Left = 16
+      object Label7: TLabel
+        Left = 82
         Height = 57
-        Top = 80
-        Width = 874
+        Top = 48
+        Width = 786
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите класс следующего вещества: H2CO3'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 54
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
-      end
-      object Pan30: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 208
-        Width = 552
-        Caption = 'Несолеобразующий оксид'
-        Color = clOlive
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Pan30Click
-      end
-      object Pan32: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 432
-        Width = 552
-        Caption = 'Основный оксид'
-        Color = clTeal
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Pan30Click
-      end
-      object Pan29: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 544
-        Width = 552
-        Caption = 'Кислота'
-        Color = clLime
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Pan29Click
-      end
-      object Pan31: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 320
-        Width = 552
-        Caption = 'Амфотерный оксид'
-        Color = 12615935
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 3
-        OnClick = Pan30Click
-      end
-    end
-    object TabSheet9: TTabSheet
-      Caption = 'TabSheet9'
-      ClientHeight = 1023
-      ClientWidth = 1912
-      object Label9: TLabel
-        Left = 16
-        Height = 57
-        Top = 80
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите класс следующего вещества: NaHCO3'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 52
-        Font.Name = 'Arial Narrow'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentColor = False
-        ParentFont = False
-        WordWrap = True
-        OptimalFill = True
-      end
-      object Pan34: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 208
-        Width = 552
-        Caption = 'Основный оксид'
-        Color = clTeal
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 0
-        OnClick = Pan34Click
-      end
-      object Pan36: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 320
-        Width = 552
-        Caption = 'Соль'
-        Color = 15794160
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 1
-        OnClick = Pan36Click
-      end
-      object Pan35: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 544
-        Width = 552
-        Caption = 'Основание'
-        Color = 15571730
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 2
-        OnClick = Pan17Click
-      end
-      object Pan33: TPanel
-        Cursor = crHandPoint
-        Left = 32
-        Height = 64
-        Top = 432
-        Width = 552
-        Caption = 'Амфотерный оксид'
-        Color = 12615935
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 3
-        OnClick = Pan13Click
-      end
-    end
-    object TabSheet10: TTabSheet
-      Caption = 'TabSheet10'
-      ClientHeight = 1023
-      ClientWidth = 1912
-      object Label10: TLabel
-        Left = 16
-        Height = 57
-        Top = 80
-        Width = 874
-        Align = alCustom
-        AutoSize = False
-        Caption = 'Определите класс следующего вещества: CO'
+        Caption = 'Определите класс следующего вещества: '
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = 57
         Font.Name = 'Arial Narrow'
@@ -17176,9 +17066,257 @@ object Form3: TForm3
         WordWrap = True
         OptimalFill = True
       end
+      object Label19: TLabel
+        Left = 406
+        Height = 75
+        Top = 112
+        Width = 141
+        Caption = 'Na₂O'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet8: TTabSheet
+      Caption = 'Кислота'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan30: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan32: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan29: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan31: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label8: TLabel
+        Left = 80
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label20: TLabel
+        Left = 394
+        Height = 75
+        Top = 112
+        Width = 165
+        Caption = 'H₂CO₃'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet9: TTabSheet
+      Caption = 'Соль'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan34: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan36: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan35: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan33: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label9: TLabel
+        Left = 80
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label21: TLabel
+        Left = 369
+        Height = 75
+        Top = 112
+        Width = 213
+        Caption = 'NaHCO₃'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet10: TTabSheet
+      Caption = 'Несолеобразующий оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
       object Pan37: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 544
         Width = 552
@@ -17193,11 +17331,11 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 0
-        OnClick = Pan39Click
+        OnClick = Pan1Click
       end
       object Pan39: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 208
         Width = 552
@@ -17212,11 +17350,11 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 1
-        OnClick = Pan39Click
+        OnClick = Pan1Click
       end
       object Pan40: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 432
         Width = 552
@@ -17231,11 +17369,11 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 2
-        OnClick = Pan40Click
+        OnClick = Pan2Click
       end
       object Pan38: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 320
         Width = 552
@@ -17250,23 +17388,18 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 3
-        OnClick = Pan39Click
+        OnClick = Pan1Click
       end
-    end
-    object TabSheet11: TTabSheet
-      Caption = 'TabSheet11'
-      ClientHeight = 1028
-      ClientWidth = 1912
-      object Label11: TLabel
-        Left = 16
+      object Label10: TLabel
+        Left = 80
         Height = 57
-        Top = 80
-        Width = 874
+        Top = 48
+        Width = 786
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите класс следующего вещества: Ba(NO3)2'
+        Caption = 'Определите класс следующего вещества: '
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 52
+        Font.Height = 57
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -17275,9 +17408,29 @@ object Form3: TForm3
         WordWrap = True
         OptimalFill = True
       end
+      object Label22: TLabel
+        Left = 431
+        Height = 75
+        Top = 112
+        Width = 78
+        Caption = 'CO'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet11: TTabSheet
+      Caption = 'Соль'
+      ClientHeight = 1028
+      ClientWidth = 944
       object Pan41: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 544
         Width = 552
@@ -17292,11 +17445,11 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 0
-        OnClick = Pan42Click
+        OnClick = Pan1Click
       end
       object Pan44: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 320
         Width = 552
@@ -17311,11 +17464,11 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 1
-        OnClick = Pan39Click
+        OnClick = Pan1Click
       end
       object Pan43: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 432
         Width = 552
@@ -17330,11 +17483,11 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 2
-        OnClick = Pan42Click
+        OnClick = Pan2Click
       end
       object Pan42: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 208
         Width = 552
@@ -17349,23 +17502,18 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 3
-        OnClick = Pan42Click
+        OnClick = Pan1Click
       end
-    end
-    object TabSheet12: TTabSheet
-      Caption = 'TabSheet12'
-      ClientHeight = 1028
-      ClientWidth = 1912
-      object Label12: TLabel
-        Left = 16
+      object Label11: TLabel
+        Left = 80
         Height = 57
-        Top = 80
-        Width = 874
+        Top = 48
+        Width = 786
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите класс следующего вещества: H2SiO3'
+        Caption = 'Определите класс следующего вещества: '
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 52
+        Font.Height = 57
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -17374,9 +17522,29 @@ object Form3: TForm3
         WordWrap = True
         OptimalFill = True
       end
+      object Label23: TLabel
+        Left = 333
+        Height = 75
+        Top = 112
+        Width = 235
+        Caption = 'Ba(NO₃)₂'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet12: TTabSheet
+      Caption = 'Кислота'
+      ClientHeight = 1028
+      ClientWidth = 944
       object Pan45: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 547
         Width = 552
@@ -17391,11 +17559,11 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 0
-        OnClick = Pan48Click
+        OnClick = Pan1Click
       end
       object Pan46: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 435
         Width = 552
@@ -17410,11 +17578,11 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 1
-        OnClick = Pan46Click
+        OnClick = Pan2Click
       end
       object Pan47: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 323
         Width = 552
@@ -17429,11 +17597,11 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 2
-        OnClick = Pan48Click
+        OnClick = Pan1Click
       end
       object Pan48: TPanel
         Cursor = crHandPoint
-        Left = 32
+        Left = 199
         Height = 64
         Top = 208
         Width = 552
@@ -17448,11 +17616,3753 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
         TabOrder = 3
-        OnClick = Pan48Click
+        OnClick = Pan1Click
+      end
+      object Label12: TLabel
+        Left = 80
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label24: TLabel
+        Left = 389
+        Height = 75
+        Top = 112
+        Width = 184
+        Caption = 'H₂SiO₃'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
       end
     end
     object TabSheet13: TTabSheet
-      Caption = 'TabSheet13'
+      Caption = 'Основный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan49: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan50: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan52: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Label25: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label26: TLabel
+        Left = 406
+        Height = 75
+        Top = 112
+        Width = 107
+        Caption = 'CaO'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan51: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet14: TTabSheet
+      Caption = 'Амфотерный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan53: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan54: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan55: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan56: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label27: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label28: TLabel
+        Left = 419
+        Height = 75
+        Top = 112
+        Width = 110
+        Caption = 'ZnO'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet15: TTabSheet
+      Caption = 'Кислотный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label29: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan57: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan58: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan59: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan60: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label30: TLabel
+        Left = 424
+        Height = 75
+        Top = 112
+        Width = 101
+        Caption = 'СO₂'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet16: TTabSheet
+      Caption = 'Соль'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan61: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan62: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Label31: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label32: TLabel
+        Left = 398
+        Height = 75
+        Top = 112
+        Width = 139
+        Caption = 'ZnCl₂'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan63: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan64: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet17: TTabSheet
+      Caption = 'Основание'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan65: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan66: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan67: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Label33: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label34: TLabel
+        Left = 412
+        Height = 75
+        Top = 112
+        Width = 119
+        Caption = 'KOH'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan68: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+    end
+    object TabSheet18: TTabSheet
+      Caption = 'Кислота'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label35: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan71: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan72: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Label36: TLabel
+        Left = 424
+        Height = 75
+        Top = 112
+        Width = 151
+        Caption = 'HNO₃'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan70: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan69: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+    end
+    object TabSheet19: TTabSheet
+      Caption = 'Амфотерный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan73: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan74: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan75: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Label37: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label38: TLabel
+        Left = 423
+        Height = 75
+        Top = 112
+        Width = 110
+        Caption = 'SnO'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan105: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet20: TTabSheet
+      Caption = 'Несолеобразующий оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan77: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan78: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan79: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan80: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label39: TLabel
+        Left = 80
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label40: TLabel
+        Left = 431
+        Height = 75
+        Top = 112
+        Width = 88
+        Caption = 'NO'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet21: TTabSheet
+      Caption = 'Основный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan81: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan83: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan84: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Label41: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label42: TLabel
+        Left = 423
+        Height = 75
+        Top = 112
+        Width = 107
+        Caption = 'BaO'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan82: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet22: TTabSheet
+      Caption = 'Соль'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label43: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan85: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan86: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan87: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan88: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label44: TLabel
+        Left = 353
+        Height = 75
+        Top = 112
+        Width = 244
+        Caption = 'Сa(OH)Br'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet23: TTabSheet
+      Caption = 'Кислота'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan89: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan90: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan91: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan92: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label45: TLabel
+        Left = 80
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label46: TLabel
+        Left = 396
+        Height = 75
+        Top = 112
+        Width = 169
+        Caption = 'H₂SO₃'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet24: TTabSheet
+      Caption = 'Основание'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan94: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan95: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Label47: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label48: TLabel
+        Left = 371
+        Height = 75
+        Top = 112
+        Width = 209
+        Caption = 'Ca(OH)₂'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan96: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan93: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+    end
+    object TabSheet25: TTabSheet
+      Caption = 'Несолеобразующий оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan97: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan98: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan99: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Label49: TLabel
+        Left = 80
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label50: TLabel
+        Left = 431
+        Height = 75
+        Top = 112
+        Width = 112
+        Caption = 'N₂O'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan100: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+    end
+    object TabSheet26: TTabSheet
+      Caption = 'Амфотерный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan101: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan102: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan103: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan104: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label51: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label52: TLabel
+        Left = 417
+        Height = 75
+        Top = 112
+        Width = 108
+        Caption = 'BeO'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet27: TTabSheet
+      Caption = 'Кислотный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label53: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan76: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan106: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan108: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Label54: TLabel
+        Left = 418
+        Height = 75
+        Top = 112
+        Width = 120
+        Caption = 'SiO₂'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan107: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet28: TTabSheet
+      Caption = 'Основание'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label55: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan110: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan111: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan112: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Label56: TLabel
+        Left = 371
+        Height = 75
+        Top = 112
+        Width = 209
+        Caption = 'Ba(OH)₂'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan113: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet29: TTabSheet
+      Caption = 'Соль'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan114: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Label57: TLabel
+        Left = 80
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label58: TLabel
+        Left = 264
+        Height = 75
+        Top = 112
+        Width = 422
+        Caption = '(NH₄)₂ Fe(SO₄)₂'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan117: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan115: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan116: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+    end
+    object TabSheet30: TTabSheet
+      Caption = 'Основный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan118: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Label59: TLabel
+        Left = 80
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label60: TLabel
+        Left = 413
+        Height = 75
+        Top = 112
+        Width = 120
+        Caption = 'MgO'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan119: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan120: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan121: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet31: TTabSheet
+      Caption = 'Основный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan122: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan123: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan124: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan125: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Label61: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label62: TLabel
+        Left = 416
+        Height = 75
+        Top = 112
+        Width = 106
+        Caption = 'CuO'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet32: TTabSheet
+      Caption = 'Кислота'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label63: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan126: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan128: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Label64: TLabel
+        Left = 396
+        Height = 75
+        Top = 112
+        Width = 159
+        Caption = 'H₃PO₄'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan129: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan127: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+    end
+    object TabSheet33: TTabSheet
+      Caption = 'Основание'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label65: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan130: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan132: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Label66: TLabel
+        Left = 369
+        Height = 75
+        Top = 112
+        Width = 212
+        Caption = 'Zn(OH)₂'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan131: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan133: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet34: TTabSheet
+      Caption = 'Соль'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan134: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan136: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Label67: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label68: TLabel
+        Left = 304
+        Height = 75
+        Top = 112
+        Width = 342
+        Caption = 'Na₃[Сr(OH)₆]'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan137: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan135: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+    end
+    object TabSheet35: TTabSheet
+      Caption = 'Основание'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan139: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Label69: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label70: TLabel
+        Left = 375
+        Height = 75
+        Top = 112
+        Width = 200
+        Caption = 'Al(OH)₃'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan140: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan141: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan138: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet36: TTabSheet
+      Caption = 'Кислотный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label71: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan142: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan143: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan144: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Label72: TLabel
+        Left = 423
+        Height = 75
+        Top = 112
+        Width = 111
+        Caption = 'NO₂'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan145: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet37: TTabSheet
+      Caption = 'Кислота'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan146: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan147: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Label73: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label74: TLabel
+        Left = 425
+        Height = 75
+        Top = 112
+        Width = 91
+        Caption = 'HCl'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan148: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan149: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet38: TTabSheet
+      Caption = 'Соль'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label75: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan150: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan151: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan152: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Label76: TLabel
+        Left = 343
+        Height = 75
+        Top = 112
+        Width = 264
+        Caption = ' CaCl(ClO)'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan153: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Соль'
+        Color = 15794160
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+    end
+    object TabSheet39: TTabSheet
+      Caption = 'Основный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label77: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan154: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan155: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan156: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Label78: TLabel
+        Left = 419
+        Height = 71
+        Top = 112
+        Width = 113
+        Caption = 'FeO'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan157: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+    end
+    object TabSheet40: TTabSheet
+      Caption = 'Основание'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label79: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan158: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan159: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan160: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Label80: TLabel
+        Left = 371
+        Height = 75
+        Top = 112
+        Width = 209
+        Caption = 'Fe(OH)₂'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan161: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet41: TTabSheet
+      Caption = 'Кислотный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label81: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan162: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Label82: TLabel
+        Left = 425
+        Height = 75
+        Top = 112
+        Width = 104
+        Caption = 'SO₃'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan164: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan165: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan163: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+    end
+    object TabSheet42: TTabSheet
+      Caption = 'Основание'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Label83: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan167: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Label84: TLabel
+        Left = 371
+        Height = 75
+        Top = 112
+        Width = 208
+        Caption = 'Fe(OH)₃'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan168: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan169: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Несолеобразующий оксид'
+        Color = clOlive
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan166: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet43: TTabSheet
+      Caption = 'Амфотерный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan170: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Основный оксид'
+        Color = clTeal
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan171: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Label85: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label86: TLabel
+        Left = 402
+        Height = 75
+        Top = 112
+        Width = 153
+        Caption = 'Fe₂O₃'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan172: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan173: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+    end
+    object TabSheet44: TTabSheet
+      Caption = 'Кислотный оксид'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object Pan175: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 432
+        Width = 552
+        Caption = 'Амфотерный оксид'
+        Color = 12615935
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Label87: TLabel
+        Left = 82
+        Height = 57
+        Top = 48
+        Width = 786
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите класс следующего вещества: '
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 57
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label88: TLabel
+        Left = 425
+        Height = 75
+        Top = 112
+        Width = 118
+        Caption = 'P₂O₅'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -53
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan176: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 544
+        Width = 552
+        Caption = 'Основание'
+        Color = 15571730
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan174: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 320
+        Width = 552
+        Caption = 'Кислота'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan177: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 208
+        Width = 552
+        Caption = 'Кислотный оксид'
+        Color = 3461932
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+    end
+    object TabSheet45: TTabSheet
+      Caption = 'TabSheet45'
+      ClientHeight = 1028
+      ClientWidth = 944
+      object ITOG: TLabel
+        Left = 13
+        Height = 57
+        Top = 104
+        Width = 925
+        Caption = 'Поздравляем, вы выполнили работу на '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -47
+        Font.Name = 'Agency FB'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object ITOGT: TLabel
+        Left = 322
+        Height = 1
+        Top = 280
+        Width = 1
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -53
+        Font.Name = 'Agency FB'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object ITOGT1: TLabel
+        Left = 578
+        Height = 63
+        Top = 280
+        Width = 48
+        Caption = '44'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -53
+        Font.Name = 'Agency FB'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object ITOGT2: TLabel
+        Left = 441
+        Height = 57
+        Top = 280
+        Width = 68
+        Caption = 'ИЗ'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -47
+        Font.Name = 'Agency FB'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
     end
   end
 end

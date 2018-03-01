@@ -1,7 +1,7 @@
 object Form5: TForm5
-  Left = 1004
+  Left = 261
   Height = 705
-  Top = 374
+  Top = 283
   Width = 950
   Align = alLeft
   Caption = 'Полезная информация'
@@ -17,9 +17,9 @@ object Form5: TForm5
     Height = 704
     Top = 0
     Width = 950
-    ActivePage = TabSheet3
+    ActivePage = TabSheet2
     Anchors = [akTop, akLeft, akRight, akBottom]
-    TabIndex = 2
+    TabIndex = 1
     TabOrder = 0
     OnChange = PageControl1Change
     object TabSheet1: TTabSheet
@@ -2430,35 +2430,6 @@ object Form5: TForm5
         OnClick = EXAMEX1Click
         ParentFont = False
         TabOrder = 1
-      end
-    end
-    object TabSheet4: TTabSheet
-      Caption = 'TabSheet4'
-      ClientHeight = 676
-      ClientWidth = 942
-      object Memo3: TMemo
-        Left = 0
-        Height = 624
-        Top = 0
-        Width = 950
-        Anchors = [akTop, akLeft, akRight]
-        Font.CharSet = ANSI_CHARSET
-        Font.Height = -45
-        Font.Name = 'AcadEref'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Lines.Strings = (
-          '2                     Олимпиады'
-          'Для успешного поступления в ВУЗ, а также для приобретения опыта и проверки своих знаний настоятельно советуем вам принимать участие во всевозможных олимпиадах.'
-          'Что касается химии, вам могут оказаться полезны следующие олимпиады:'
-          'Всероссийская олимпиада школьников по химии (сайт http://vos.olimpiada.ru) '
-          'Московская олимпиада школьников по химии (сайт http://moschem.olimpiada.ru/)'
-          'Всероссийская Сеченовская олимпиада ( сайт http://moschem.olimpiada.ru/)'
-        )
-        OnChange = Memo1Change
-        ParentFont = False
-        ReadOnly = True
-        TabOrder = 0
       end
     end
   end

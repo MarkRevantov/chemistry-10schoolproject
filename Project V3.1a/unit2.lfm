@@ -16331,9 +16331,9 @@ object Form2: TForm2
     OnClick = Test4Click
   end
   object Label1: TLabel
-    Left = 392
+    Left = 400
     Height = 63
-    Top = 24
+    Top = 8
     Width = 154
     Caption = 'Тесты'
     Font.Color = clMenu
@@ -16341,25 +16341,5 @@ object Form2: TForm2
     Font.Name = 'Arial'
     ParentColor = False
     ParentFont = False
-  end
-  object Test5: TPanel
-    Cursor = crHandPoint
-    Left = 160
-    Height = 64
-    Top = 408
-    Width = 620
-    Anchors = [akLeft, akRight]
-    Caption = 'Строение атома'
-    Color = 16364957
-    Font.CharSet = RUSSIAN_CHARSET
-    Font.Height = -21
-    Font.Name = '@Arial Unicode MS'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    TabOrder = 4
-    OnClick = Test5Click
   end
 end

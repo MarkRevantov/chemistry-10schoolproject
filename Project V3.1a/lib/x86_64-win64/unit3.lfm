@@ -1,7 +1,7 @@
 object Form3: TForm3
-  Left = 349
+  Left = 674
   Height = 705
-  Top = 208
+  Top = 169
   Width = 950
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
@@ -16255,8 +16255,8 @@ object Form3: TForm3
     Height = 1056
     Top = 8
     Width = 952
-    ActivePage = TabSheet45
-    TabIndex = 44
+    ActivePage = TabSheet41
+    TabIndex = 40
     TabOrder = 0
     OnChange = PageControl1Change
     object TabSheet1: TTabSheet
@@ -16359,13 +16359,13 @@ object Form3: TForm3
       end
       object Label13: TLabel
         Left = 424
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 102
+        Width = 105
         Caption = 'SO₂'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -16473,13 +16473,13 @@ object Form3: TForm3
       end
       object Label14: TLabel
         Left = 423
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 105
+        Width = 101
         Caption = 'K₂O'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -16490,7 +16490,7 @@ object Form3: TForm3
     object TabSheet3: TTabSheet
       Caption = 'Несолеобразующий оксид'
       ClientHeight = 1028
-      ClientWidth = 1912
+      ClientWidth = 944
       object Pan10: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -16587,13 +16587,13 @@ object Form3: TForm3
       end
       object Label15: TLabel
         Left = 426
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 99
+        Width = 97
         Caption = 'SiO'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -16604,7 +16604,7 @@ object Form3: TForm3
     object TabSheet4: TTabSheet
       Caption = 'Кислота'
       ClientHeight = 1028
-      ClientWidth = 1912
+      ClientWidth = 944
       object Pan14: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -16701,13 +16701,13 @@ object Form3: TForm3
       end
       object Label16: TLabel
         Left = 396
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 158
+        Width = 168
         Caption = 'H₂SO₄'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -16821,13 +16821,13 @@ object Form3: TForm3
       end
       object Label17: TLabel
         Left = 395
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 160
+        Width = 159
         Caption = 'NaOH'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -16954,13 +16954,13 @@ object Form3: TForm3
       end
       object Label18: TLabel
         Left = 398
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 155
+        Width = 159
         Caption = 'K₂SO₄'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -17068,13 +17068,13 @@ object Form3: TForm3
       end
       object Label19: TLabel
         Left = 406
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 138
+        Width = 141
         Caption = 'Na₂O'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -17182,13 +17182,13 @@ object Form3: TForm3
       end
       object Label20: TLabel
         Left = 394
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 162
+        Width = 165
         Caption = 'H₂CO₃'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -17296,13 +17296,13 @@ object Form3: TForm3
       end
       object Label21: TLabel
         Left = 369
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 212
+        Width = 213
         Caption = 'NaHCO₃'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -17410,13 +17410,13 @@ object Form3: TForm3
       end
       object Label22: TLabel
         Left = 431
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 89
+        Width = 78
         Caption = 'CO'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -17524,13 +17524,13 @@ object Form3: TForm3
       end
       object Label23: TLabel
         Left = 333
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 290
+        Width = 235
         Caption = 'Ba(NO₃)₂'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -17638,13 +17638,13 @@ object Form3: TForm3
       end
       object Label24: TLabel
         Left = 389
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 172
+        Width = 184
         Caption = 'H₂SiO₃'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -17733,13 +17733,13 @@ object Form3: TForm3
       end
       object Label26: TLabel
         Left = 406
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 119
+        Width = 107
         Caption = 'CaO'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -17866,13 +17866,13 @@ object Form3: TForm3
       end
       object Label28: TLabel
         Left = 419
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 113
+        Width = 110
         Caption = 'ZnO'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -17980,13 +17980,13 @@ object Form3: TForm3
       end
       object Label30: TLabel
         Left = 424
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 105
+        Width = 101
         Caption = 'СO₂'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -18056,13 +18056,13 @@ object Form3: TForm3
       end
       object Label32: TLabel
         Left = 398
-        Height = 71
+        Height = 75
         Top = 112
         Width = 139
         Caption = 'ZnCl₂'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -18189,13 +18189,13 @@ object Form3: TForm3
       end
       object Label34: TLabel
         Left = 412
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 127
+        Width = 119
         Caption = 'KOH'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -18284,13 +18284,13 @@ object Form3: TForm3
       end
       object Label36: TLabel
         Left = 424
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 143
+        Width = 151
         Caption = 'HNO₃'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -18339,7 +18339,7 @@ object Form3: TForm3
     object TabSheet19: TTabSheet
       Caption = 'Амфотерный оксид'
       ClientHeight = 1028
-      ClientWidth = 1912
+      ClientWidth = 944
       object Pan73: TPanel
         Cursor = crHandPoint
         Left = 200
@@ -18417,13 +18417,13 @@ object Form3: TForm3
       end
       object Label38: TLabel
         Left = 423
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 116
+        Width = 110
         Caption = 'SnO'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -18550,13 +18550,13 @@ object Form3: TForm3
       end
       object Label40: TLabel
         Left = 431
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 89
+        Width = 88
         Caption = 'NO'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -18645,13 +18645,13 @@ object Form3: TForm3
       end
       object Label42: TLabel
         Left = 423
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 116
+        Width = 107
         Caption = 'BaO'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -18777,14 +18777,14 @@ object Form3: TForm3
         OnClick = Pan1Click
       end
       object Label44: TLabel
-        Left = 302
-        Height = 71
+        Left = 353
+        Height = 75
         Top = 112
-        Width = 347
-        Caption = 'Сa(OH  )Br'
+        Width = 244
+        Caption = 'Сa(OH)Br'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -18892,13 +18892,13 @@ object Form3: TForm3
       end
       object Label46: TLabel
         Left = 396
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 159
+        Width = 169
         Caption = 'H₂SO₃'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -18967,14 +18967,14 @@ object Form3: TForm3
         OptimalFill = True
       end
       object Label48: TLabel
-        Left = 322
-        Height = 71
+        Left = 371
+        Height = 75
         Top = 112
-        Width = 306
-        Caption = 'Ca(OH  )₂'
+        Width = 209
+        Caption = 'Ca(OH)₂'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -19101,13 +19101,13 @@ object Form3: TForm3
       end
       object Label50: TLabel
         Left = 431
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 108
+        Width = 112
         Caption = 'N₂O'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -19234,13 +19234,13 @@ object Form3: TForm3
       end
       object Label52: TLabel
         Left = 417
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 116
+        Width = 108
         Caption = 'BeO'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -19329,13 +19329,13 @@ object Form3: TForm3
       end
       object Label54: TLabel
         Left = 418
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 115
+        Width = 120
         Caption = 'SiO₂'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -19442,14 +19442,14 @@ object Form3: TForm3
         OnClick = Pan2Click
       end
       object Label56: TLabel
-        Left = 324
-        Height = 71
+        Left = 371
+        Height = 75
         Top = 112
-        Width = 303
-        Caption = 'Ba(OH  )₂'
+        Width = 209
+        Caption = 'Ba(OH)₂'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -19518,14 +19518,14 @@ object Form3: TForm3
         OptimalFill = True
       end
       object Label58: TLabel
-        Left = 169
-        Height = 71
+        Left = 264
+        Height = 75
         Top = 112
-        Width = 580
-        Caption = '(NH₄  )₂ Fe(SO₄  )₂'
+        Width = 422
+        Caption = '(NH₄)₂ Fe(SO₄)₂'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -19633,13 +19633,13 @@ object Form3: TForm3
       end
       object Label60: TLabel
         Left = 413
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 125
+        Width = 120
         Caption = 'MgO'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -19804,13 +19804,13 @@ object Form3: TForm3
       end
       object Label62: TLabel
         Left = 416
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 119
+        Width = 106
         Caption = 'CuO'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -19880,13 +19880,13 @@ object Form3: TForm3
       end
       object Label64: TLabel
         Left = 396
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 158
+        Width = 159
         Caption = 'H₃PO₄'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -19993,14 +19993,14 @@ object Form3: TForm3
         OnClick = Pan2Click
       end
       object Label66: TLabel
-        Left = 325
-        Height = 71
+        Left = 369
+        Height = 75
         Top = 112
-        Width = 300
-        Caption = 'Zn(OH  )₂'
+        Width = 212
+        Caption = 'Zn(OH)₂'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -20107,14 +20107,14 @@ object Form3: TForm3
         OptimalFill = True
       end
       object Label68: TLabel
-        Left = 265
-        Height = 71
+        Left = 304
+        Height = 75
         Top = 112
-        Width = 420
-        Caption = 'Na₃[Сr(OH  )₆]'
+        Width = 342
+        Caption = 'Na₃[Сr(OH)₆]'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -20202,14 +20202,14 @@ object Form3: TForm3
         OptimalFill = True
       end
       object Label70: TLabel
-        Left = 332
-        Height = 71
+        Left = 375
+        Height = 75
         Top = 112
-        Width = 285
-        Caption = 'Al(OH  )₃'
+        Width = 200
+        Caption = 'Al(OH)₃'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -20344,7 +20344,7 @@ object Form3: TForm3
         Color = 15571730
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -21
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold]
@@ -20355,13 +20355,13 @@ object Form3: TForm3
       end
       object Label72: TLabel
         Left = 423
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 105
+        Width = 111
         Caption = 'NO₂'
-        Font.CharSet = RUSSIAN_CHARSET
+        Font.CharSet = ANSI_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -20450,13 +20450,13 @@ object Form3: TForm3
       end
       object Label74: TLabel
         Left = 425
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 101
+        Width = 91
         Caption = 'HCl'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -20582,14 +20582,14 @@ object Form3: TForm3
         OnClick = Pan1Click
       end
       object Label76: TLabel
-        Left = 292
-        Height = 71
+        Left = 343
+        Height = 75
         Top = 112
-        Width = 399
-        Caption = ' CaCl(ClO  )'
+        Width = 264
+        Caption = ' CaCl(ClO)'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -20810,14 +20810,14 @@ object Form3: TForm3
         OnClick = Pan2Click
       end
       object Label80: TLabel
-        Left = 325
-        Height = 71
+        Left = 371
+        Height = 75
         Top = 112
-        Width = 300
-        Caption = 'Fe(OH  )₂'
+        Width = 209
+        Caption = 'Fe(OH)₂'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -20887,13 +20887,13 @@ object Form3: TForm3
       end
       object Label82: TLabel
         Left = 425
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 101
+        Width = 104
         Caption = 'SO₃'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -21000,14 +21000,14 @@ object Form3: TForm3
         OnClick = Pan2Click
       end
       object Label84: TLabel
-        Left = 326
-        Height = 71
+        Left = 371
+        Height = 75
         Top = 112
-        Width = 299
-        Caption = 'Fe(OH  )₃'
+        Width = 208
+        Caption = 'Fe(OH)₃'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -21134,13 +21134,13 @@ object Form3: TForm3
       end
       object Label86: TLabel
         Left = 402
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 147
+        Width = 153
         Caption = 'Fe₂O₃'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]
@@ -21229,13 +21229,13 @@ object Form3: TForm3
       end
       object Label88: TLabel
         Left = 425
-        Height = 71
+        Height = 75
         Top = 112
-        Width = 121
+        Width = 118
         Caption = 'P₂O₅'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
-        Font.Name = '@Arial Unicode MS'
+        Font.Name = 'Comic Sans MS'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Font.Style = [fsBold, fsItalic]

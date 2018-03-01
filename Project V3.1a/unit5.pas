@@ -21,7 +21,6 @@ type
     Button6: TButton;
     EXAMEX1: TButton;
     Memo2: TMemo;
-    Memo3: TMemo;
     RAZV: TButton;
     EXAMEX: TButton;
     Image1: TImage;
@@ -30,7 +29,6 @@ type
     TabSheet1: TTabSheet;
     TabSheet2: TTabSheet;
     TabSheet3: TTabSheet;
-    TabSheet4: TTabSheet;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);

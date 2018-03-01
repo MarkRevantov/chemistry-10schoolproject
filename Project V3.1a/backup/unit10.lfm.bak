@@ -1,7 +1,7 @@
 object Form7: TForm7
-  Left = 1045
+  Left = 665
   Height = 705
-  Top = 192
+  Top = 108
   Width = 950
   Caption = 'Form7'
   ClientHeight = 705
@@ -9,6 +9,7 @@ object Form7: TForm7
   Constraints.MinHeight = 705
   Constraints.MinWidth = 950
   OnCreate = FormCreate
+  OnShow = FormShow
   Position = poDesktopCenter
   LCLVersion = '1.8.0.6'
   object PageControl1: TPageControl
@@ -20,19 +21,21 @@ object Form7: TForm7
     TabIndex = 0
     TabOrder = 0
     object TabSheet1: TTabSheet
+      Tag = 2
       Caption = 'Неверно, правильным ответом будет : Si'
       ClientHeight = 1034
       ClientWidth = 1912
       object Label15: TLabel
-        Left = 304
-        Height = 256
-        Top = 32
-        Width = 626
+        Tag = 2
+        Left = 48
+        Height = 120
+        Top = 168
+        Width = 856
         Align = alCustom
         AutoSize = False
-        Caption = 'Определите вещество по его описанию: Элемент IV а подгруппы, 3 периода '
+        Caption = 'Определите вещество по его описанию: '
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = 72
+        Font.Height = 65
         Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
@@ -41,87 +44,85 @@ object Form7: TForm7
         WordWrap = True
         OptimalFill = True
       end
-      object Pan1: TPanel
-        Cursor = crHandPoint
-        Left = 16
-        Height = 96
-        Top = 328
-        Width = 400
-        Caption = 'Si'
-        Color = clInfoBk
+      object QUES1: TLabel
+        Left = 48
+        Height = 128
+        Top = 280
+        Width = 856
+        Align = alCustom
+        AutoSize = False
         Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -60
-        Font.Name = '@Arial Unicode MS'
+        Font.Height = -45
+        Font.Name = 'Arial Narrow'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
-        Font.Style = [fsBold]
         ParentColor = False
         ParentFont = False
-        TabOrder = 0
-        OnClick = Pan2Click
-        OnMouseMove = Pan1MouseMove
-        OnMouseUp = Pan1MouseUp
+        WordWrap = True
+        OnClick = QUES1Click
+        OptimalFill = True
       end
-      object Pan2: TPanel
-        Cursor = crHandPoint
-        Left = 16
-        Height = 96
-        Top = 480
-        Width = 400
-        Caption = '2'
-        Color = clInfoBk
-        Font.CharSet = RUSSIAN_CHARSET
+      object Edit1: TEdit
+        Left = 56
+        Height = 89
+        Top = 488
+        Width = 552
         Font.Height = -60
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 0
+      end
+      object Panel1: TPanel
+        Left = 688
+        Height = 89
+        Top = 488
+        Width = 216
+        Caption = 'Продолжить'
+        Color = clSilver
+        Font.Color = clBlack
+        Font.Height = -31
         ParentColor = False
         ParentFont = False
         TabOrder = 1
-        OnClick = Pan1Click
+        OnClick = Panel1Click
       end
-      object Pan3: TPanel
-        Cursor = crHandPoint
-        Left = 464
-        Height = 96
-        Top = 328
-        Width = 400
-        Caption = '3'
-        Color = clInfoBk
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -60
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
+      object Label2: TLabel
+        Left = 512
+        Height = 61
+        Top = 80
+        Width = 129
+        Caption = 'Label2'
+        Font.Height = -45
         ParentColor = False
         ParentFont = False
-        TabOrder = 2
-        OnClick = Pan1Click
-      end
-      object Pan4: TPanel
-        Cursor = crHandPoint
-        Left = 464
-        Height = 96
-        Top = 480
-        Width = 400
-        Caption = '4'
-        Color = clInfoBk
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -60
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        TabOrder = 3
-        OnClick = Pan1Click
       end
     end
     object TabSheet2: TTabSheet
       Caption = 'TabSheet2'
+      ClientHeight = 1034
+      ClientWidth = 1912
+      object Label1: TLabel
+        Left = 348
+        Height = 15
+        Top = 182
+        Width = 34
+        Caption = 'Label1'
+        ParentColor = False
+      end
     end
+    object TabSheet3: TTabSheet
+      Caption = 'TabSheet3'
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 10000
+    OnTimer = Timer1Timer
+    left = 164
+    top = 129
+  end
+  object Timer2: TTimer
+    OnTimer = Timer2Timer
+    left = 247
+    top = 129
   end
 end
