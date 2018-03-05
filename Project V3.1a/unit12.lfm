@@ -1,0 +1,151 @@
+object Form9: TForm9
+  Left = 545
+  Height = 705
+  Top = 20
+  Width = 950
+  BorderStyle = bsSingle
+  Caption = 'Form9'
+  ClientHeight = 705
+  ClientWidth = 950
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '1.8.0.6'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 705
+    Top = 0
+    Width = 952
+    ActivePage = TabSheet1
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'TabSheet1'
+      ClientHeight = 677
+      ClientWidth = 944
+      object Label15: TLabel
+        Tag = 2
+        Left = 40
+        Height = 168
+        Top = 32
+        Width = 856
+        Align = alCustom
+        AutoSize = False
+        Caption = #9'Используя метод электронного баланса, расставьте коэффициенты в данном уравнении реакции. В ответе укажите сумму коэффициентов.'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 52
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Edit1: TEdit
+        Left = 64
+        Height = 89
+        Top = 512
+        Width = 552
+        Font.Height = -60
+        ParentFont = False
+        TabOrder = 0
+      end
+      object Panel1: TPanel
+        Left = 696
+        Height = 89
+        Top = 512
+        Width = 216
+        Caption = 'Продолжить'
+        Color = clSilver
+        Font.Color = clBlack
+        Font.Height = -31
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Panel1Click
+      end
+      object QUES1: TLabel
+        Left = 40
+        Height = 128
+        Top = 224
+        Width = 856
+        Align = alCustom
+        AutoSize = False
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 64
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'TabSheet2'
+      ClientHeight = 677
+      ClientWidth = 944
+      object ITOG: TLabel
+        Left = 13
+        Height = 57
+        Top = 104
+        Width = 925
+        Caption = 'Поздравляем, вы выполнили работу на '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -47
+        Font.Name = 'Agency FB'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object ITOGT1: TLabel
+        Left = 578
+        Height = 63
+        Top = 280
+        Width = 33
+        Caption = '17'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -53
+        Font.Name = 'Agency FB'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object ITOGT2: TLabel
+        Left = 441
+        Height = 57
+        Top = 280
+        Width = 68
+        Caption = 'ИЗ'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -47
+        Font.Name = 'Agency FB'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object ITOGT3: TLabel
+        Left = 336
+        Height = 63
+        Top = 280
+        Width = 24
+        Caption = '0'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -53
+        Font.Name = 'Agency FB'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+  end
+end

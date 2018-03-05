@@ -13,7 +13,11 @@ type
   { TForm7 }
 
   TForm7 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
     Edit1: TEdit;
+    Image1: TImage;
+    Image2: TImage;
     ITOG: TLabel;
     ITOGT1: TLabel;
     ITOGT2: TLabel;
@@ -28,6 +32,8 @@ type
     TabSheet2: TTabSheet;
     Timer1: TTimer;
     Timer2: TTimer;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormHide(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -54,7 +60,7 @@ var
 
   //C:string;
 implementation
-
+  uses Unit1,Unit2;
 {$R *.lfm}
 
 { TForm7 }
@@ -71,15 +77,38 @@ QUES1.Caption:=Ques;
 b:=0;
 end;
 
+procedure TForm7.Button1Click(Sender: TObject);
+begin
+  Form7.Hide;
+  Unit2.Form2.Show;
+end;
+
+procedure TForm7.Button2Click(Sender: TObject);
+begin
+  Form7.Hide;
+  Unit1.Form1.Show;
+end;
+
 procedure TForm7.FormHide(Sender: TObject);
 begin
- Timer1.Enabled:=False;
+   Timer1.Enabled:=False;
+ Timer2.Enabled:=False;
+    Label2.caption:='0';
+    b:=0;
+ Reset(F1);
+ readln(F1,C);
+readln(F1,Ques);
+readln(F1,ANSWER);
+QUES1.Caption:=Ques;
 end;
 
 procedure TForm7.FormShow(Sender: TObject);
 begin
   Timer1.Enabled:=True;
-  Timer2.Enabled:=true;;
+  Timer2.Enabled:=true;
+  PageControl1.Activepage:=Tabsheet1;
+    Label1.Caption:='0';
+
 end;
 
 procedure TForm7.Pan1MouseMove(Sender: TObject; Shift: TShiftState; X,
@@ -123,6 +152,7 @@ begin
      if PageControl1.Tag=C then
      PageControl1.TabIndex:=1 ;
       b:=0;
+      Edit1.Caption:='';
      Timer1.enabled:=false;
      Timer1.enabled:=True;
     end;

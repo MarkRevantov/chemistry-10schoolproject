@@ -13,6 +13,94 @@ type
   { TForm3 }
 
   TForm3 = class(TForm)
+    Button1: TButton;
+    Button10: TButton;
+    Button11: TButton;
+    Button12: TButton;
+    Button13: TButton;
+    Button14: TButton;
+    Button15: TButton;
+    Button16: TButton;
+    Button17: TButton;
+    Button18: TButton;
+    Button19: TButton;
+    Button2: TButton;
+    Button20: TButton;
+    Button21: TButton;
+    Button22: TButton;
+    Button23: TButton;
+    Button24: TButton;
+    Button25: TButton;
+    Button26: TButton;
+    Button27: TButton;
+    Button28: TButton;
+    Button29: TButton;
+    Button3: TButton;
+    Button30: TButton;
+    Button31: TButton;
+    Button32: TButton;
+    Button33: TButton;
+    Button34: TButton;
+    Button35: TButton;
+    Button36: TButton;
+    Button37: TButton;
+    Button38: TButton;
+    Button39: TButton;
+    Button4: TButton;
+    Button40: TButton;
+    Button41: TButton;
+    Button42: TButton;
+    Button43: TButton;
+    Button44: TButton;
+    Button45: TButton;
+    Button46: TButton;
+    Button47: TButton;
+    Button48: TButton;
+    Button49: TButton;
+    Button5: TButton;
+    Button50: TButton;
+    Button51: TButton;
+    Button52: TButton;
+    Button53: TButton;
+    Button54: TButton;
+    Button55: TButton;
+    Button56: TButton;
+    Button57: TButton;
+    Button58: TButton;
+    Button59: TButton;
+    Button6: TButton;
+    Button60: TButton;
+    Button61: TButton;
+    Button62: TButton;
+    Button63: TButton;
+    Button64: TButton;
+    Button65: TButton;
+    Button66: TButton;
+    Button67: TButton;
+    Button68: TButton;
+    Button69: TButton;
+    Button7: TButton;
+    Button70: TButton;
+    Button71: TButton;
+    Button72: TButton;
+    Button73: TButton;
+    Button74: TButton;
+    Button75: TButton;
+    Button76: TButton;
+    Button77: TButton;
+    Button78: TButton;
+    Button79: TButton;
+    Button8: TButton;
+    Button80: TButton;
+    Button81: TButton;
+    Button82: TButton;
+    Button83: TButton;
+    Button84: TButton;
+    Button85: TButton;
+    Button86: TButton;
+    Button87: TButton;
+    Button88: TButton;
+    Button9: TButton;
     Image1: TImage;
     ITOGT: TLabel;
     ITOGT1: TLabel;
@@ -329,8 +417,11 @@ type
     TabSheet7: TTabSheet;
     TabSheet8: TTabSheet;
     TabSheet9: TTabSheet;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure PageControl1Change(Sender: TObject);
 
     procedure Pan1Click(Sender: TObject);
@@ -350,7 +441,7 @@ var
   Form3: TForm3;
 
 implementation
- uses Unit2;
+ uses Unit2,Unit1;
 {$R *.lfm}
 
 { TForm3 }
@@ -360,9 +451,28 @@ begin
 
 end;
 
+procedure TForm3.Button1Click(Sender: TObject);
+begin
+  Form3.Hide;
+  Unit2.Form2.Show;
+end;
+
+procedure TForm3.Button2Click(Sender: TObject);
+begin
+  Form3.Hide;
+  Unit1.Form1.Show;
+end;
+
 procedure TForm3.FormCreate(Sender: TObject);
 begin
   PageControl1.ActivePage := TabSheet1
+end;
+
+procedure TForm3.FormShow(Sender: TObject);
+begin
+  Form3.Tag:=0;
+ ITOGT.Caption:='0';
+ PageControl1.Activepage:=Tabsheet1;
 end;
 
 procedure TForm3.PageControl1Change(Sender: TObject);

@@ -18,7 +18,9 @@ type
     Test1: TPanel;
     Test2: TPanel;
     Test3: TPanel;
-    Test4: TPanel;
+    Test5: TPanel;
+    Test6: TPanel;
+    EXI22: TPanel;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure Image1Click(Sender: TObject);
     procedure Image1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
@@ -29,9 +31,19 @@ type
     procedure Test2Click(Sender: TObject);
     procedure Test2MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
-    procedure Test4Click(Sender: TObject);
+    procedure EXI22Click(Sender: TObject);
+    procedure Test3Click(Sender: TObject);
     procedure Test3MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
+    procedure EXI22MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
+      );
+    procedure Test5Click(Sender: TObject);
+    procedure Test5MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
+      );
+    procedure Test6Click(Sender: TObject);
+    procedure Test6MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
+      );
+
   private
 
   public
@@ -42,7 +54,7 @@ var
   Form2: TForm2;
 
 implementation
-uses Unit1,Unit3,Unit9,Unit10;
+uses Unit1,Unit3,Unit9,Unit10,Unit11,Unit12;
 {$R *.lfm}
 
 { TForm2 }
@@ -58,6 +70,9 @@ begin
   Test1.Color:=$00F9B59D;
   Test2.Color:=$00F9B59D;
    Test3.Color:=$00F9B59D;
+   Test5.Color:=$00F9B59D;
+   Test6.Color:=$00F9B59D;
+   EXI22.Color:=$00F9B59D;
 end;
 
 procedure TForm2.Test1Click(Sender: TObject);
@@ -86,10 +101,18 @@ begin
    Test2.Color:=clTeal;
 end;
 
-procedure TForm2.Test4Click(Sender: TObject);
+procedure TForm2.EXI22Click(Sender: TObject);
 begin
+  Form2.hide;
+  Unit1.Form1.Show;
+end;
+
+procedure TForm2.Test3Click(Sender: TObject);
+begin
+  Showmessage('В этом тесте на выполнение каждого задания отводится 60 секунд, по окончанию данного вам времени , программа автоматичски перейдёт к следующему вопросу. Также для его выполнения вам понадобится ТАБЛИЦА ИМ. МЕНДЕЛЕЕВА.');
   Unit2.Form2.Hide;
   Unit10.Form7.Show;
+
 end;
 
 procedure TForm2.Test3MouseMove(Sender: TObject; Shift: TShiftState; X,
@@ -97,6 +120,37 @@ procedure TForm2.Test3MouseMove(Sender: TObject; Shift: TShiftState; X,
 begin
   Test3.Color:=clTeal;
 end;
+
+procedure TForm2.EXI22MouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+begin
+  EXI22.Color:=clTeal;
+end;
+
+procedure TForm2.Test5Click(Sender: TObject);
+begin
+  Unit11.Form8.Show;
+  Unit2.Form2.Hide;
+end;
+
+procedure TForm2.Test5MouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+begin
+ Test5.Color:=clTeal;
+end;
+
+procedure TForm2.Test6Click(Sender: TObject);
+begin
+  Unit12.Form9.Show;
+  Unit2.Form2.Hide;
+end;
+
+procedure TForm2.Test6MouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+begin
+  Test6.Color:=clTeal;
+end;
+
 
 procedure TForm2.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin

@@ -1,7 +1,7 @@
 object Form6: TForm6
-  Left = 263
+  Left = 395
   Height = 705
-  Top = 129
+  Top = 96
   Width = 950
   Caption = 'Определение типа связи в химическом веществе'
   ClientHeight = 705
@@ -16,13 +16,14 @@ object Form6: TForm6
     Height = 713
     Top = 0
     Width = 952
-    ActivePage = TabSheet17
-    TabIndex = 16
+    ActivePage = TabSheet1
+    ShowTabs = False
+    TabIndex = 0
     TabOrder = 0
     OnChange = PageControl1Change
     object TabSheet1: TTabSheet
       Caption = 'H2'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       OnContextPopup = TabSheet1ContextPopup
       object Pan2: TPanel
@@ -189,7 +190,7 @@ object Form6: TForm6
     end
     object TabSheet2: TTabSheet
       Caption = 'HCl'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan6: TPanel
         Cursor = crHandPoint
@@ -341,7 +342,7 @@ object Form6: TForm6
     end
     object TabSheet3: TTabSheet
       Caption = 'NaCl'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan11: TPanel
         Cursor = crHandPoint
@@ -492,7 +493,7 @@ object Form6: TForm6
     end
     object TabSheet4: TTabSheet
       Caption = 'Fe'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan16: TPanel
         Cursor = crHandPoint
@@ -643,7 +644,7 @@ object Form6: TForm6
     end
     object TabSheet5: TTabSheet
       Caption = 'H2O'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan21: TPanel
         Cursor = crHandPoint
@@ -809,7 +810,7 @@ object Form6: TForm6
     end
     object TabSheet6: TTabSheet
       Caption = 'KCl'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan26: TPanel
         Cursor = crHandPoint
@@ -960,7 +961,7 @@ object Form6: TForm6
     end
     object TabSheet7: TTabSheet
       Caption = 'K'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan31: TPanel
         Cursor = crHandPoint
@@ -1111,7 +1112,7 @@ object Form6: TForm6
     end
     object TabSheet8: TTabSheet
       Caption = 'F2'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan36: TPanel
         Cursor = crHandPoint
@@ -1277,7 +1278,7 @@ object Form6: TForm6
     end
     object TabSheet9: TTabSheet
       Caption = 'HF'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan41: TPanel
         Cursor = crHandPoint
@@ -1428,7 +1429,7 @@ object Form6: TForm6
     end
     object TabSheet10: TTabSheet
       Caption = 'Na'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan46: TPanel
         Cursor = crHandPoint
@@ -1579,7 +1580,7 @@ object Form6: TForm6
     end
     object TabSheet11: TTabSheet
       Caption = 'N2'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan51: TPanel
         Cursor = crHandPoint
@@ -1745,7 +1746,7 @@ object Form6: TForm6
     end
     object TabSheet12: TTabSheet
       Caption = 'CH3OH'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan56: TPanel
         Cursor = crHandPoint
@@ -1911,7 +1912,7 @@ object Form6: TForm6
     end
     object TabSheet13: TTabSheet
       Caption = 'Cu'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan61: TPanel
         Cursor = crHandPoint
@@ -2062,7 +2063,7 @@ object Form6: TForm6
     end
     object TabSheet14: TTabSheet
       Caption = 'O2'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan66: TPanel
         Cursor = crHandPoint
@@ -2228,7 +2229,7 @@ object Form6: TForm6
     end
     object TabSheet15: TTabSheet
       Caption = 'I2'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan71: TPanel
         Cursor = crHandPoint
@@ -2394,7 +2395,7 @@ object Form6: TForm6
     end
     object TabSheet16: TTabSheet
       Caption = 'PbO'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Pan76: TPanel
         Cursor = crHandPoint
@@ -2545,7 +2546,7 @@ object Form6: TForm6
     end
     object TabSheet17: TTabSheet
       Caption = 'Result'
-      ClientHeight = 685
+      ClientHeight = 705
       ClientWidth = 944
       object Label17: TLabel
         Left = 16

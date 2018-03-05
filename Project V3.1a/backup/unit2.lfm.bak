@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 472
+  Left = 446
   Height = 750
-  Top = 73
+  Top = 0
   Width = 950
   Caption = 'Тесты'
   ClientHeight = 750
@@ -16307,28 +16307,8 @@ object Form2: TForm2
     ParentColor = False
     ParentFont = False
     TabOrder = 2
-    OnClick = Test4Click
+    OnClick = Test3Click
     OnMouseMove = Test3MouseMove
-  end
-  object Test4: TPanel
-    Cursor = crHandPoint
-    Left = 160
-    Height = 64
-    Top = 552
-    Width = 620
-    Anchors = [akLeft, akRight]
-    Caption = 'Назад в меню'
-    Color = 16364957
-    Font.CharSet = RUSSIAN_CHARSET
-    Font.Height = -21
-    Font.Name = '@Arial Unicode MS'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-    TabOrder = 3
-    OnClick = Test4Click
   end
   object Label1: TLabel
     Left = 400
@@ -16341,5 +16321,68 @@ object Form2: TForm2
     Font.Name = 'Arial'
     ParentColor = False
     ParentFont = False
+  end
+  object Test5: TPanel
+    Cursor = crHandPoint
+    Left = 160
+    Height = 64
+    Top = 408
+    Width = 620
+    Anchors = [akLeft, akRight]
+    Caption = 'Определение класса вещества'
+    Color = 16364957
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Test5Click
+    OnMouseMove = Test5MouseMove
+  end
+  object Test6: TPanel
+    Cursor = crHandPoint
+    Left = 160
+    Height = 64
+    Top = 504
+    Width = 620
+    Anchors = [akLeft, akRight]
+    Caption = 'ОВР'
+    Color = 16364957
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 4
+    OnClick = Test6Click
+    OnMouseMove = Test6MouseMove
+  end
+  object EXI22: TPanel
+    Cursor = crHandPoint
+    Left = 160
+    Height = 64
+    Top = 648
+    Width = 620
+    Anchors = [akLeft, akRight]
+    Caption = 'Назад в меню'
+    Color = 16364957
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 5
+    OnClick = EXI22Click
+    OnMouseMove = EXI22MouseMove
   end
 end

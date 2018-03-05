@@ -30,7 +30,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="7">
+    <Units Count="9">
       <Unit0>
         <Filename Value="Chemistry.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -83,6 +83,22 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit10"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="unit11.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form8"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit11"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="unit12.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form9"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit12"/>
+      </Unit8>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

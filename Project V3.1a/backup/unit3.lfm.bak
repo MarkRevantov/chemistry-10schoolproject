@@ -1,7 +1,7 @@
 object Form3: TForm3
-  Left = 674
+  Left = 839
   Height = 705
-  Top = 169
+  Top = 781
   Width = 950
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
@@ -14,6 +14,7 @@ object Form3: TForm3
   Constraints.MinWidth = 950
   OnClose = FormClose
   OnCreate = FormCreate
+  OnShow = FormShow
   Position = poDesktopCenter
   LCLVersion = '1.8.0.6'
   object Image1: TImage
@@ -16255,13 +16256,14 @@ object Form3: TForm3
     Height = 1056
     Top = 8
     Width = 952
-    ActivePage = TabSheet45
-    TabIndex = 44
+    ActivePage = TabSheet1
+    ShowTabs = False
+    TabIndex = 0
     TabOrder = 0
     OnChange = PageControl1Change
     object TabSheet1: TTabSheet
       Caption = 'Кислотный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label1: TLabel
         Left = 82
@@ -16372,10 +16374,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button1: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button2: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet2: TTabSheet
       Caption = 'Основный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan5: TPanel
         Cursor = crHandPoint
@@ -16486,10 +16506,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button3: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button4: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet3: TTabSheet
       Caption = 'Несолеобразующий оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan10: TPanel
         Cursor = crHandPoint
@@ -16600,10 +16638,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button5: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button6: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet4: TTabSheet
       Caption = 'Кислота'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan14: TPanel
         Cursor = crHandPoint
@@ -16714,10 +16770,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button7: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button8: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet5: TTabSheet
       Caption = 'Основание'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan19: TPanel
         Cursor = crHandPoint
@@ -16853,10 +16927,28 @@ object Form3: TForm3
         TabOrder = 4
         OnClick = Pan1Click
       end
+      object Button9: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button10: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
     end
     object TabSheet6: TTabSheet
       Caption = 'Соль'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan24: TPanel
         Cursor = crHandPoint
@@ -16967,10 +17059,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button11: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button12: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet7: TTabSheet
       Caption = 'Основный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan26: TPanel
         Cursor = crHandPoint
@@ -17081,10 +17191,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button13: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button14: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet8: TTabSheet
       Caption = 'Кислота'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan30: TPanel
         Cursor = crHandPoint
@@ -17195,10 +17323,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button15: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button16: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet9: TTabSheet
       Caption = 'Соль'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan34: TPanel
         Cursor = crHandPoint
@@ -17309,10 +17455,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button17: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button18: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet10: TTabSheet
       Caption = 'Несолеобразующий оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan37: TPanel
         Cursor = crHandPoint
@@ -17423,10 +17587,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button19: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button20: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet11: TTabSheet
       Caption = 'Соль'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan41: TPanel
         Cursor = crHandPoint
@@ -17537,10 +17719,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button21: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button22: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet12: TTabSheet
       Caption = 'Кислота'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan45: TPanel
         Cursor = crHandPoint
@@ -17651,10 +17851,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button23: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button24: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet13: TTabSheet
       Caption = 'Основный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan49: TPanel
         Cursor = crHandPoint
@@ -17765,10 +17983,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button25: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button26: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet14: TTabSheet
       Caption = 'Амфотерный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan53: TPanel
         Cursor = crHandPoint
@@ -17879,10 +18115,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button27: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button28: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet15: TTabSheet
       Caption = 'Кислотный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label29: TLabel
         Left = 82
@@ -17993,10 +18247,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button29: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button30: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet16: TTabSheet
       Caption = 'Соль'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan61: TPanel
         Cursor = crHandPoint
@@ -18107,10 +18379,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button31: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button32: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet17: TTabSheet
       Caption = 'Основание'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan65: TPanel
         Cursor = crHandPoint
@@ -18221,10 +18511,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
+      object Button33: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button34: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet18: TTabSheet
       Caption = 'Кислота'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label35: TLabel
         Left = 82
@@ -18335,10 +18643,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
+      object Button35: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button36: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet19: TTabSheet
       Caption = 'Амфотерный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan73: TPanel
         Cursor = crHandPoint
@@ -18449,10 +18775,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button37: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button38: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet20: TTabSheet
       Caption = 'Несолеобразующий оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan77: TPanel
         Cursor = crHandPoint
@@ -18563,10 +18907,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button39: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button40: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet21: TTabSheet
       Caption = 'Основный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan81: TPanel
         Cursor = crHandPoint
@@ -18677,10 +19039,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button41: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button42: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet22: TTabSheet
       Caption = 'Соль'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label43: TLabel
         Left = 82
@@ -18791,10 +19171,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button43: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button44: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet23: TTabSheet
       Caption = 'Кислота'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan89: TPanel
         Cursor = crHandPoint
@@ -18905,10 +19303,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button45: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button46: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet24: TTabSheet
       Caption = 'Основание'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan94: TPanel
         Cursor = crHandPoint
@@ -19019,10 +19435,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
+      object Button47: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button48: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet25: TTabSheet
       Caption = 'Несолеобразующий оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan97: TPanel
         Cursor = crHandPoint
@@ -19133,10 +19567,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
+      object Button49: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button50: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet26: TTabSheet
       Caption = 'Амфотерный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan101: TPanel
         Cursor = crHandPoint
@@ -19247,10 +19699,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button51: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button52: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet27: TTabSheet
       Caption = 'Кислотный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label53: TLabel
         Left = 82
@@ -19361,10 +19831,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button53: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button54: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet28: TTabSheet
       Caption = 'Основание'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label55: TLabel
         Left = 82
@@ -19475,10 +19963,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button55: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button56: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet29: TTabSheet
       Caption = 'Соль'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan114: TPanel
         Cursor = crHandPoint
@@ -19589,10 +20095,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
+      object Button57: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button58: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet30: TTabSheet
       Caption = 'Основный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan118: TPanel
         Cursor = crHandPoint
@@ -19703,10 +20227,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button59: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button60: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet31: TTabSheet
       Caption = 'Основный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan122: TPanel
         Cursor = crHandPoint
@@ -19817,10 +20359,28 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
+      object Button61: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button62: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet32: TTabSheet
       Caption = 'Кислота'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label63: TLabel
         Left = 82
@@ -19931,10 +20491,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
+      object Button63: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button64: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet33: TTabSheet
       Caption = 'Основание'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label65: TLabel
         Left = 82
@@ -20045,10 +20623,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button65: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button66: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet34: TTabSheet
       Caption = 'Соль'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan134: TPanel
         Cursor = crHandPoint
@@ -20159,10 +20755,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
+      object Button67: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button68: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet35: TTabSheet
       Caption = 'Основание'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan139: TPanel
         Cursor = crHandPoint
@@ -20273,10 +20887,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button69: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button70: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet36: TTabSheet
       Caption = 'Кислотный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label71: TLabel
         Left = 82
@@ -20387,10 +21019,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button71: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button72: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet37: TTabSheet
       Caption = 'Кислота'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan146: TPanel
         Cursor = crHandPoint
@@ -20501,10 +21151,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button73: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button74: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet38: TTabSheet
       Caption = 'Соль'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label75: TLabel
         Left = 82
@@ -20615,10 +21283,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
+      object Button75: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button76: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet39: TTabSheet
       Caption = 'Основный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label77: TLabel
         Left = 82
@@ -20729,10 +21415,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
+      object Button77: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button78: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet40: TTabSheet
       Caption = 'Основание'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label79: TLabel
         Left = 82
@@ -20843,10 +21547,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button79: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button80: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet41: TTabSheet
       Caption = 'Кислотный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label81: TLabel
         Left = 82
@@ -20957,10 +21679,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
+      object Button81: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button82: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet42: TTabSheet
       Caption = 'Основание'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Label83: TLabel
         Left = 82
@@ -21071,10 +21811,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button83: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button84: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet43: TTabSheet
       Caption = 'Амфотерный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan170: TPanel
         Cursor = crHandPoint
@@ -21185,10 +21943,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
+      object Button85: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button86: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet44: TTabSheet
       Caption = 'Кислотный оксид'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object Pan175: TPanel
         Cursor = crHandPoint
@@ -21299,10 +22075,28 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
+      object Button87: TButton
+        Left = 800
+        Height = 41
+        Top = 512
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 4
+      end
+      object Button88: TButton
+        Left = 800
+        Height = 41
+        Top = 576
+        Width = 115
+        Caption = 'Вернутться в меню'
+        OnClick = Button2Click
+        TabOrder = 5
+      end
     end
     object TabSheet45: TTabSheet
       Caption = 'TabSheet45'
-      ClientHeight = 1028
+      ClientHeight = 1048
       ClientWidth = 944
       object ITOG: TLabel
         Left = 13
