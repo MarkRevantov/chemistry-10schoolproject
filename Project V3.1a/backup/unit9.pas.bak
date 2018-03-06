@@ -261,7 +261,10 @@ begin
 end;
 
 procedure TForm6.Pan2Click(Sender: TObject);
+var
+j:string ;
 begin
+ j:='Неверно, правильный ответ : '+ PageControl1.Activepage.Caption;
    ShowMessage(PageControl1.Activepage.Caption);
    Form6.Tag:=Form6.Tag+1;
    PageControl1.Tabindex :=Form6.Tag;
