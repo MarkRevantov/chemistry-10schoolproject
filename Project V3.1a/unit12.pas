@@ -13,6 +13,7 @@ type
   { TForm9 }
 
   TForm9 = class(TForm)
+    Button2: TButton;
     Edit1: TEdit;
     ITOG: TLabel;
     ITOGT1: TLabel;
@@ -24,6 +25,7 @@ type
     QUES1: TLabel;
     TabSheet1: TTabSheet;
     TabSheet2: TTabSheet;
+    procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Panel1Click(Sender: TObject);
   private
@@ -54,6 +56,12 @@ begin
     //Label15.Caption:=(Ques);
 
 
+end;
+
+procedure TForm9.Button1Click(Sender: TObject);
+begin
+   Unit2.Form2.Show;
+   Form9.Hide;
 end;
 
 procedure TForm9.Panel1Click(Sender: TObject);

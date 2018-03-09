@@ -25,6 +25,7 @@ type
     procedure Image1Click(Sender: TObject);
     procedure Image1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
+    procedure Label1Click(Sender: TObject);
     procedure Test1Click(Sender: TObject);
     procedure Test1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
@@ -54,7 +55,7 @@ var
   Form2: TForm2;
 
 implementation
-uses Unit1,Unit3,Unit9,Unit10,Unit11,Unit12;
+uses Unit1,Unit3,Unit9,Unit10,Unit11,Unit12, Unit13;
 {$R *.lfm}
 
 { TForm2 }
@@ -73,6 +74,11 @@ begin
    Test5.Color:=$00F9B59D;
    Test6.Color:=$00F9B59D;
    EXI22.Color:=$00F9B59D;
+end;
+
+procedure TForm2.Label1Click(Sender: TObject);
+begin
+
 end;
 
 procedure TForm2.Test1Click(Sender: TObject);

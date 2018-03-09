@@ -1,14 +1,15 @@
 object Form1: TForm1
   Cursor = crArrow
-  Left = 442
+  Left = 355
   Height = 705
-  Top = 314
+  Top = 197
   Width = 950
-  Caption = 'Chemchi'
-  ClientHeight = 705
-  ClientWidth = 950
+  Caption = 'Chemhelper'
+  ClientHeight = 0
+  ClientWidth = 0
   Constraints.MinHeight = 705
   Constraints.MinWidth = 950
+  DesignTimePPI = 120
   OnCreate = FormCreate
   Position = poDesktopCenter
   LCLVersion = '1.8.0.6'
@@ -16252,15 +16253,15 @@ object Form1: TForm1
   end
   object Pinform: TPanel
     Cursor = crHandPoint
-    Left = 315
+    Left = 288
     Height = 65
     Top = 240
-    Width = 320
+    Width = 376
     Anchors = [akLeft, akRight]
     Caption = 'Полезная информация'
     Color = 16364957
     Font.CharSet = RUSSIAN_CHARSET
-    Font.Height = -21
+    Font.Height = -25
     Font.Name = '@Arial Unicode MS'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -16273,15 +16274,15 @@ object Form1: TForm1
   end
   object Vmaterial: TPanel
     Cursor = crHandPoint
-    Left = 315
+    Left = 288
     Height = 65
-    Top = 488
-    Width = 320
+    Top = 368
+    Width = 376
     Anchors = [akLeft, akRight]
     Caption = 'Вспомогательный материал'
     Color = 16364957
     Font.CharSet = RUSSIAN_CHARSET
-    Font.Height = -19
+    Font.Height = -25
     Font.Name = '@Arial Unicode MS'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -16294,15 +16295,15 @@ object Form1: TForm1
   end
   object Exits: TPanel
     Cursor = crHandPoint
-    Left = 315
+    Left = 288
     Height = 65
     Top = 608
-    Width = 320
+    Width = 376
     Anchors = [akLeft, akRight]
     Caption = 'Выход'
     Color = 16364957
     Font.CharSet = RUSSIAN_CHARSET
-    Font.Height = -19
+    Font.Height = -25
     Font.Name = '@Arial Unicode MS'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -16315,15 +16316,15 @@ object Form1: TForm1
   end
   object Tests: TPanel
     Cursor = crHandPoint
-    Left = 315
+    Left = 288
     Height = 65
     Top = 120
-    Width = 320
+    Width = 376
     Anchors = [akLeft, akRight]
     Caption = 'Тесты'
     Color = 16364957
     Font.CharSet = RUSSIAN_CHARSET
-    Font.Height = -21
+    Font.Height = -25
     Font.Name = '@Arial Unicode MS'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -16334,17 +16335,17 @@ object Form1: TForm1
     OnClick = TestsClick
     OnMouseMove = TestsMouseMove
   end
-  object Opit: TPanel
+  object Creators: TPanel
     Cursor = crHandPoint
-    Left = 315
+    Left = 288
     Height = 65
-    Top = 368
-    Width = 320
+    Top = 488
+    Width = 376
     Anchors = [akLeft, akRight]
-    Caption = 'Опыты'
+    Caption = 'О создателях'
     Color = 16364957
     Font.CharSet = RUSSIAN_CHARSET
-    Font.Height = -21
+    Font.Height = -25
     Font.Name = '@Arial Unicode MS'
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
@@ -16352,7 +16353,22 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
     TabOrder = 1
-    OnClick = OpitClick
-    OnMouseMove = OpitMouseMove
+    OnClick = CreatorsClick
+    OnMouseMove = CreatorsMouseMove
+  end
+  object chemhelper: TLabel
+    Left = 0
+    Height = 95
+    Top = 0
+    Width = 950
+    Align = alTop
+    Alignment = taCenter
+    Caption = 'Chemhelper'
+    Font.Color = clYellow
+    Font.Height = -67
+    Font.Name = 'Comic Sans MS'
+    Font.Quality = fqCleartypeNatural
+    ParentColor = False
+    ParentFont = False
   end
 end

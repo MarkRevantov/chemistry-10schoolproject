@@ -8,6 +8,7 @@ object Form2: TForm2
   ClientWidth = 950
   Constraints.MinHeight = 750
   Constraints.MinWidth = 950
+  DesignTimePPI = 120
   OnClose = FormClose
   Position = poDesktopCenter
   LCLVersion = '1.8.0.6'
@@ -16311,16 +16312,19 @@ object Form2: TForm2
     OnMouseMove = Test3MouseMove
   end
   object Label1: TLabel
-    Left = 400
+    Left = 0
     Height = 63
-    Top = 8
-    Width = 154
+    Top = 0
+    Width = 950
+    Align = alTop
+    Alignment = taCenter
     Caption = 'Тесты'
     Font.Color = clMenu
     Font.Height = 64
     Font.Name = 'Arial'
     ParentColor = False
     ParentFont = False
+    OnClick = Label1Click
   end
   object Test5: TPanel
     Cursor = crHandPoint

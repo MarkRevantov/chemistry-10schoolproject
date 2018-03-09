@@ -17,6 +17,8 @@ type
     ANS: TLabel;
     Button1: TButton;
     Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
     Image1: TImage;
     Image2: TImage;
     ITOG: TLabel;

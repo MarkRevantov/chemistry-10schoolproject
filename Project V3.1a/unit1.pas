@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  Buttons;
+  Buttons, StdCtrls;
 
 type
 
@@ -14,8 +14,9 @@ type
 
   TForm1 = class(TForm)
     Image1: TImage;
+    chemhelper: TLabel;
     Tests: TPanel;
-    Opit: TPanel;
+    Creators: TPanel;
     Pinform: TPanel;
     Vmaterial: TPanel;
     Exits: TPanel;
@@ -27,8 +28,8 @@ type
 
     procedure Image1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
-    procedure OpitClick(Sender: TObject);
-    procedure OpitMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
+    procedure CreatorsClick(Sender: TObject);
+    procedure CreatorsMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
     procedure PinformClick(Sender: TObject);
     procedure PinformMouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
@@ -51,7 +52,7 @@ var
   Form1: TForm1;
 
 implementation
-uses Unit2,Unit5;
+uses Unit2,Unit5, Unit13;
 
 {$R *.lfm}
 
@@ -83,21 +84,22 @@ procedure TForm1.Image1MouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
   Tests.Color:=$00F9B59D;
-  Opit.Color:=$00F9B59D;
+  Creators.Color:=$00F9B59D;
   Pinform.Color:=$00F9B59D;
   Vmaterial.Color:=$00F9B59D;
   Exits.Color:=$00F9B59D;
 end;
 
-procedure TForm1.OpitClick(Sender: TObject);
+procedure TForm1.CreatorsClick(Sender: TObject);
 begin
-
+  Unit13.Form10.Show;
+  Form1.Hide;
 end;
 
-procedure TForm1.OpitMouseMove(Sender: TObject; Shift: TShiftState; X,
+procedure TForm1.CreatorsMouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
-  Opit.Color:=clTeal;
+  Creators.Color:=clTeal;
 end;
 
 procedure TForm1.PinformClick(Sender: TObject);

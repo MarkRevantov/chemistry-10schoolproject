@@ -1,7 +1,7 @@
 object Form3: TForm3
-  Left = 735
+  Left = 301
   Height = 705
-  Top = 249
+  Top = 158
   Width = 950
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
@@ -12,6 +12,7 @@ object Form3: TForm3
   Constraints.MaxWidth = 1000000
   Constraints.MinHeight = 705
   Constraints.MinWidth = 950
+  DesignTimePPI = 120
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
@@ -16375,20 +16376,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button1: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button2: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end

@@ -1,13 +1,14 @@
 object Form7: TForm7
-  Left = 551
+  Left = 644
   Height = 705
-  Top = 165
+  Top = 278
   Width = 950
-  Caption = 'Form7'
+  Caption = 'Определите вещество по его описанию'
   ClientHeight = 705
   ClientWidth = 950
   Constraints.MinHeight = 705
   Constraints.MinWidth = 950
+  DesignTimePPI = 120
   OnCreate = FormCreate
   OnHide = FormHide
   OnShow = FormShow
@@ -22091,7 +22092,7 @@ object Form7: TForm7
     Left = 256
     Height = 41
     Top = 616
-    Width = 115
+    Width = 152
     Caption = 'Вернутться в меню'
     OnClick = Button2Click
     TabOrder = 2

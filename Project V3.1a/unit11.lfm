@@ -1,12 +1,13 @@
 object Form8: TForm8
-  Left = 715
+  Left = 218
   Height = 705
-  Top = 84
+  Top = 214
   Width = 950
   BorderStyle = bsSingle
-  Caption = 'Form8'
+  Caption = 'Определите класс вещества'
   ClientHeight = 705
   ClientWidth = 950
+  DesignTimePPI = 120
   OnCreate = FormCreate
   OnHide = FormHide
   OnShow = FormShow
@@ -17,12 +18,12 @@ object Form8: TForm8
     Height = 705
     Top = 0
     Width = 952
-    ActivePage = TabSheet1
-    TabIndex = 0
+    ActivePage = TabSheet2
+    TabIndex = 1
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'TabSheet1'
-      ClientHeight = 677
+      ClientHeight = 672
       ClientWidth = 944
       TabVisible = False
       object Image1: TImage
@@ -11101,15 +11102,15 @@ object Form8: TForm8
         Left = 512
         Height = 41
         Top = 616
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
     end
     object TabSheet2: TTabSheet
-      Caption = 'TabSheet2'
-      ClientHeight = 677
+      Caption = 'object Button2: TButton'
+      ClientHeight = 672
       ClientWidth = 944
       OnContextPopup = TabSheet2ContextPopup
       TabVisible = False
@@ -22067,9 +22068,9 @@ object Form8: TForm8
       end
       object ITOG: TLabel
         Left = 13
-        Height = 57
+        Height = 55
         Top = 104
-        Width = 925
+        Width = 949
         Caption = 'Поздравляем, вы выполнили работу на '
         Font.CharSet = ANSI_CHARSET
         Font.Height = -47
@@ -22082,9 +22083,9 @@ object Form8: TForm8
       end
       object ITOGT1: TLabel
         Left = 578
-        Height = 63
+        Height = 62
         Top = 280
-        Width = 33
+        Width = 58
         Caption = '17'
         Font.CharSet = ANSI_CHARSET
         Font.Height = -53
@@ -22097,9 +22098,9 @@ object Form8: TForm8
       end
       object ITOGT2: TLabel
         Left = 441
-        Height = 57
+        Height = 55
         Top = 280
-        Width = 68
+        Width = 62
         Caption = 'ИЗ'
         Font.CharSet = ANSI_CHARSET
         Font.Height = -47
@@ -22112,9 +22113,9 @@ object Form8: TForm8
       end
       object ITOGT3: TLabel
         Left = 336
-        Height = 63
+        Height = 62
         Top = 280
-        Width = 24
+        Width = 29
         Caption = '0'
         Font.CharSet = ANSI_CHARSET
         Font.Height = -53
@@ -22124,6 +22125,24 @@ object Form8: TForm8
         Font.Style = [fsBold]
         ParentColor = False
         ParentFont = False
+      end
+      object Button3: TButton
+        Left = 512
+        Height = 41
+        Top = 616
+        Width = 144
+        Caption = 'Вернуться в меню'
+        OnClick = Button2Click
+        TabOrder = 0
+      end
+      object Button4: TButton
+        Left = 757
+        Height = 41
+        Top = 616
+        Width = 115
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 1
       end
     end
   end
