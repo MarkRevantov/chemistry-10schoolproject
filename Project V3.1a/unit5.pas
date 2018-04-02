@@ -15,8 +15,6 @@ type
   TForm5 = class(TForm)
     Button1: TButton;
     Button2: TButton;
-    Button3: TButton;
-    Button4: TButton;
     Button5: TButton;
     Button6: TButton;
     EXAMEX1: TButton;

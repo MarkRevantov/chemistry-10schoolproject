@@ -1,38 +1,39 @@
 object Form5: TForm5
-  Left = 261
-  Height = 705
-  Top = 283
-  Width = 950
+  Left = 175
+  Height = 710
+  Top = 149
+  Width = 1200
   Align = alLeft
   Caption = 'Полезная информация'
-  ClientHeight = 705
-  ClientWidth = 950
+  ClientHeight = 710
+  ClientWidth = 1200
   Constraints.MinHeight = 705
   Constraints.MinWidth = 950
+  DesignTimePPI = 120
   OnCreate = FormCreate
   Position = poDesktopCenter
-  LCLVersion = '1.0.14.0'
+  LCLVersion = '1.8.0.6'
   object PageControl1: TPageControl
     Left = 0
-    Height = 704
+    Height = 710
     Top = 0
-    Width = 950
-    ActivePage = TabSheet1
+    Width = 1200
+    ActivePage = TabSheet3
     Anchors = [akTop, akLeft, akRight, akBottom]
-    TabIndex = 0
+    TabIndex = 2
     TabOrder = 0
     OnChange = PageControl1Change
     object TabSheet1: TTabSheet
-      Caption = 'TabSheet1'
-      ClientHeight = 676
-      ClientWidth = 942
+      Caption = 'Выбор Раздела'
+      ClientHeight = 677
+      ClientWidth = 1192
       object Button1: TButton
         AnchorSideBottom.Control = Button2
         Left = 235
         Height = 66
-        Top = 88
-        Width = 480
-        Anchors = [akTop, akLeft, akRight, akBottom]
+        Top = 89
+        Width = 730
+        Anchors = [akLeft, akRight]
         BorderSpacing.Bottom = 62
         Caption = 'Экзамен'
         Font.CharSet = RUSSIAN_CHARSET
@@ -45,12 +46,11 @@ object Form5: TForm5
         TabOrder = 0
       end
       object Button2: TButton
-        AnchorSideBottom.Control = Button3
         Left = 235
-        Height = 66
-        Top = 216
-        Width = 480
-        Anchors = [akTop, akLeft, akRight, akBottom]
+        Height = 61
+        Top = 226
+        Width = 730
+        Anchors = [akLeft, akRight]
         BorderSpacing.Bottom = 62
         Caption = 'Олимпиады'
         Font.CharSet = RUSSIAN_CHARSET
@@ -62,49 +62,13 @@ object Form5: TForm5
         ParentFont = False
         TabOrder = 1
       end
-      object Button3: TButton
-        AnchorSideBottom.Control = Button4
-        Left = 235
-        Height = 66
-        Top = 344
-        Width = 480
-        Anchors = [akTop, akLeft, akRight, akBottom]
-        BorderSpacing.Bottom = 62
-        Caption = 'Возможные ВУЗы'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -40
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        OnClick = Button3Click
-        ParentFont = False
-        TabOrder = 2
-      end
-      object Button4: TButton
-        AnchorSideBottom.Control = Button5
-        AnchorSideBottom.Side = asrBottom
-        Left = 235
-        Height = 73
-        Top = 472
-        Width = 480
-        Anchors = [akTop, akLeft, akRight, akBottom]
-        BorderSpacing.Bottom = 129
-        Caption = 'Возможные профессии'
-        Font.CharSet = RUSSIAN_CHARSET
-        Font.Height = -40
-        Font.Name = '@Arial Unicode MS'
-        Font.Pitch = fpVariable
-        Font.Quality = fqDraft
-        ParentFont = False
-        TabOrder = 3
-      end
       object Button5: TButton
         AnchorSideBottom.Control = Button6
         Left = 235
-        Height = 66
-        Top = 608
-        Width = 480
-        Anchors = [akTop, akLeft, akRight, akBottom]
+        Height = 74
+        Top = 496
+        Width = 730
+        Anchors = [akTop, akLeft, akRight]
         BorderSpacing.Bottom = 84
         Caption = 'Выход'
         Font.CharSet = RUSSIAN_CHARSET
@@ -114,7 +78,7 @@ object Form5: TForm5
         Font.Quality = fqDraft
         OnClick = Button5Click
         ParentFont = False
-        TabOrder = 4
+        TabOrder = 2
       end
       object Button6: TButton
         Left = 565
@@ -122,18 +86,18 @@ object Form5: TForm5
         Top = 758
         Width = 75
         Caption = 'Button6'
-        TabOrder = 5
+        TabOrder = 3
       end
     end
     object TabSheet2: TTabSheet
-      Caption = 'TabSheet2'
-      ClientHeight = 676
-      ClientWidth = 942
+      Caption = 'Экзамены'
+      ClientHeight = 677
+      ClientWidth = 1192
       object Memo1: TMemo
         Left = -4
         Height = 640
         Top = 0
-        Width = 950
+        Width = 1200
         Anchors = [akTop, akLeft, akRight]
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
@@ -2415,14 +2379,14 @@ object Form5: TForm5
       end
     end
     object TabSheet3: TTabSheet
-      Caption = 'TabSheet3'
-      ClientHeight = 676
-      ClientWidth = 942
+      Caption = 'Олимпиады'
+      ClientHeight = 677
+      ClientWidth = 1192
       object Memo2: TMemo
         Left = -4
         Height = 648
         Top = -8
-        Width = 950
+        Width = 1200
         Anchors = [akTop, akLeft, akRight]
         Font.CharSet = ANSI_CHARSET
         Font.Height = -47

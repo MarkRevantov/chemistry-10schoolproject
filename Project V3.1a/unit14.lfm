@@ -1,0 +1,109 @@
+object Form11: TForm11
+  Left = 281
+  Height = 707
+  Top = 156
+  Width = 1200
+  Caption = 'УнЮн'
+  ClientHeight = 707
+  ClientWidth = 1200
+  Color = clWhite
+  DesignTimePPI = 120
+  Font.Color = clBlack
+  OnCreate = FormCreate
+  LCLVersion = '1.8.0.6'
+  object Quest: TLabel
+    Left = 20
+    Height = 408
+    Top = 80
+    Width = 1160
+    Anchors = []
+    AutoSize = False
+    Caption = 'Навеску металла Х массой 1,000 г аккуратно растворили в 30%-й азотной кислоте при нагревании. К образовавшемуся раствору добавили щёлочь до полного выпадения осадка. Осадок отделили и прокалили до постоянной массы (реакция 3). В результате получили 1,429 г красно-коричневого вещества. 1. Определите металл Х. '
+    Font.Height = -43
+    ParentColor = False
+    ParentFont = False
+    WordWrap = True
+    OnClick = QuestClick
+  end
+  object BackToTests: TButton
+    Left = 16
+    Height = 48
+    Top = 568
+    Width = 220
+    Caption = 'Назад к тестам'
+    Font.Color = clWhite
+    Font.Height = -27
+    OnClick = BackToTestsClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object BackToMenu: TButton
+    Left = 16
+    Height = 48
+    Top = 624
+    Width = 220
+    Caption = 'Назад в меню'
+    Font.Color = clWhite
+    Font.Height = -27
+    OnClick = BackToMenuClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object PrintYourAnswer: TEdit
+    Left = 280
+    Height = 79
+    Top = 592
+    Width = 712
+    Font.Color = clBlack
+    Font.Height = -53
+    ParentFont = False
+    TabOrder = 2
+  end
+  object YourAnswer: TLabel
+    Left = 280
+    Height = 81
+    Top = 496
+    Width = 290
+    Caption = 'Ваш ответ:'
+    Font.Color = clBlack
+    Font.Height = -60
+    ParentColor = False
+    ParentFont = False
+  end
+  object Check: TButton
+    Left = 1008
+    Height = 79
+    Top = 592
+    Width = 174
+    Caption = 'Проверить!'
+    Font.Color = clWhite
+    Font.Height = -30
+    OnClick = CheckClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Task: TLabel
+    Left = 440
+    Height = 71
+    Top = 0
+    Width = 274
+    Caption = 'Задача №X'
+    Font.Color = clBlack
+    Font.Height = -53
+    ParentColor = False
+    ParentFont = False
+    OnClick = TaskClick
+  end
+  object BackToChapter: TButton
+    Left = 16
+    Height = 48
+    Top = 512
+    Width = 220
+    Caption = 'Назад к разделу'
+    Font.Color = clWhite
+    Font.Height = -27
+    OnClick = BackToChapterClick
+    ParentFont = False
+    TabOrder = 4
+  end
+end

@@ -13,6 +13,7 @@ type
   { TForm2 }
 
   TForm2 = class(TForm)
+    EXI22: TPanel;
     Image1: TImage;
     Label1: TLabel;
     Test1: TPanel;
@@ -20,12 +21,12 @@ type
     Test3: TPanel;
     Test5: TPanel;
     Test6: TPanel;
-    EXI22: TPanel;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure Image1Click(Sender: TObject);
     procedure Image1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
     procedure Label1Click(Sender: TObject);
+    procedure ScrollBox1Click(Sender: TObject);
     procedure Test1Click(Sender: TObject);
     procedure Test1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
@@ -77,6 +78,11 @@ begin
 end;
 
 procedure TForm2.Label1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm2.ScrollBox1Click(Sender: TObject);
 begin
 
 end;

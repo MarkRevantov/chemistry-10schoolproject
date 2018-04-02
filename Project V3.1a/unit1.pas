@@ -13,8 +13,12 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
+    Image4: TImage;
+    Options: TPanel;
     Image1: TImage;
     chemhelper: TLabel;
+    Image2: TImage;
+    Image3: TImage;
     Tests: TPanel;
     Creators: TPanel;
     Pinform: TPanel;
@@ -30,6 +34,10 @@ type
       );
     procedure CreatorsClick(Sender: TObject);
     procedure CreatorsMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
+    procedure Image2Click(Sender: TObject);
+    procedure OptionsClick(Sender: TObject);
+    procedure OptionsMouseMove(Sender: TObject; Shift: TShiftState; X,
+      Y: Integer);
     procedure PinformClick(Sender: TObject);
     procedure PinformMouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
@@ -52,7 +60,7 @@ var
   Form1: TForm1;
 
 implementation
-uses Unit2,Unit5, Unit13;
+uses Unit2,Unit5, Unit13, Unit14;
 
 {$R *.lfm}
 
@@ -68,9 +76,20 @@ begin
 
 end;
 
+procedure TForm1.OptionsClick(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.OptionsMouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+begin
+  Options.Color:=clTeal;
+end;
+
 procedure TForm1.ExitsClick(Sender: TObject);
 begin
-   Form1.Close;
+
 end;
 
 procedure TForm1.ExitsMouseMove(Sender: TObject; Shift: TShiftState; X,
@@ -101,6 +120,12 @@ procedure TForm1.CreatorsMouseMove(Sender: TObject; Shift: TShiftState; X,
 begin
   Creators.Color:=clTeal;
 end;
+
+procedure TForm1.Image2Click(Sender: TObject);
+begin
+
+end;
+
 
 procedure TForm1.PinformClick(Sender: TObject);
 begin
