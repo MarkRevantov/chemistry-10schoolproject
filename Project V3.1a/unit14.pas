@@ -5,29 +5,24 @@ unit Unit14;
 interface
 
 uses
-    Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
-  StdCtrls, ExtCtrls;
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
+  ExtCtrls, StdCtrls;
 
 type
 
   { TForm11 }
 
   TForm11 = class(TForm)
-    BackToTests: TButton;
-    BackToMenu: TButton;
-    BackToChapter: TButton;
-    Check: TButton;
-    PrintYourAnswer: TEdit;
-    YourAnswer: TLabel;
-    Task: TLabel;
-    Quest: TLabel;
-    procedure BackToChapterClick(Sender: TObject);
-    procedure BackToMenuClick(Sender: TObject);
-    procedure BackToTestsClick(Sender: TObject);
-    procedure CheckClick(Sender: TObject);
+    Edit1: TEdit;
+    Label15: TLabel;
+    PageControl1: TPageControl;
+    Panel1: TPanel;
+    QUES1: TLabel;
+    Label1: TLabel;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
     procedure FormCreate(Sender: TObject);
-    procedure TaskClick(Sender: TObject);
-    procedure QuestClick(Sender: TObject);
+    procedure Panel1Click(Sender: TObject);
   private
 
   public
@@ -36,65 +31,49 @@ type
 
 var
   Form11: TForm11;
-  ans, c: String;
-  F1: text;
-
-
+  F1:Text;
+  C,KP,b:integer;
+  Ques,Answer:string ;
 implementation
-uses
-    Unit1, Unit2;
+
 {$R *.lfm}
 
 { TForm11 }
 
-procedure TForm11.BackToTestsClick(Sender: TObject);
+procedure TForm11.Panel1Click(Sender: TObject);
+var j:string;
 begin
-    Form11.Hide;
-    Unit1.Form1.Show;
-end;
-
-procedure TForm11.CheckClick(Sender: TObject);
-begin
-  if PrintYourAnswer.Caption = ans then
+   If Edit1.Text=ANSWER then
     begin
-    Showmessage('Верно!');
+         Form11.Tag:=Form11.Tag+1;
+         Label1.Caption:=IntToStr(Form11.Tag);
+         readln(F1,Ques);
+         readln(F1,ANSWER);
+         QUES1.Caption:=Ques;
+         PageControl1.Tag:=PageControl1.Tag+1;
     end
-  else
-  begin
-  Showmessage('Ошибка! Правильный ответ: ' + ans)
-  end;
-end;
+    else
+    begin
+     j:='Ошибка,правильный ответ: '+ ANSWER;
+    Showmessage(j);
+    readln(F1,Ques);
+    readln(F1,ANSWER);
+    QUES1.Caption:=Ques ;
+    PageControl1.Tag:=PageControl1.Tag+1;
+    end;
+     if PageControl1.Tag=C then
+     PageControl1.TabIndex:=1;
+      Edit1.Caption:=''
+    end;
 
 procedure TForm11.FormCreate(Sender: TObject);
 begin
-    AssignFile(F1, 'tests/OlpimpicProblems/OP1.txt');
+  AssignFile(F1, 'tests/ChemicalBalance.txt');
  Reset(F1);
-readln(F1,c);
-Task.Caption:=c;
-readln(F1,c);
-Quest.Caption:=c;
-readln(F1,ans);
-end;
-
-procedure TForm11.TaskClick(Sender: TObject);
-begin
-
-end;
-
-procedure TForm11.QuestClick(Sender: TObject);
-begin
-
-end;
-
-procedure TForm11.BackToMenuClick(Sender: TObject);
-begin
-    Form11.Hide;
-    Unit1.Form1.Show;
-end;
-
-procedure TForm11.BackToChapterClick(Sender: TObject);
-begin
-
+ readln(F1,C);
+ readln(F1,Ques);
+readln(F1,ANSWER);
+QUES1.Caption:=Ques;
 end;
 
 end.
