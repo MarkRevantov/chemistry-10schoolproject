@@ -1,0 +1,2614 @@
+object Form6: TForm6
+  Left = 731
+  Height = 705
+  Top = 172
+  Width = 950
+  Caption = 'Определение типа связи в химическом веществе'
+  ClientHeight = 705
+  ClientWidth = 950
+  Constraints.MinHeight = 705
+  Constraints.MinWidth = 950
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '1.0.14.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 713
+    Top = 0
+    Width = 952
+    ActivePage = TabSheet1
+    ShowTabs = False
+    TabIndex = 0
+    TabOrder = 0
+    OnChange = PageControl1Change
+    object TabSheet1: TTabSheet
+      Caption = 'H2'
+      ClientHeight = 705
+      ClientWidth = 944
+      OnContextPopup = TabSheet1ContextPopup
+      object Pan2: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan1: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan4: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan5: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+      object Label22: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label24: TLabel
+        Left = 440
+        Height = 73
+        Top = 64
+        Width = 41
+        Caption = 'H'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Pan3: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label1: TLabel
+        Left = 480
+        Height = 52
+        Top = 88
+        Width = 24
+        Caption = '2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button1: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button2: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'HCl'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan6: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Label2: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Pan7: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan8: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan9: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+      object Pan10: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label23: TLabel
+        Left = 432
+        Height = 73
+        Top = 64
+        Width = 89
+        Alignment = taCenter
+        Caption = 'HCl'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button3: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button4: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'NaCl'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan11: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan12: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan13: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan14: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Pan15: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label25: TLabel
+        Left = 416
+        Height = 73
+        Top = 64
+        Width = 120
+        Caption = 'NaCl'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label26: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Button5: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button6: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Fe'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan16: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan17: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan18: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan19: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+      object Pan20: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan1Click
+      end
+      object Label27: TLabel
+        Left = 448
+        Height = 73
+        Top = 64
+        Width = 61
+        Caption = 'Fe'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label28: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Button7: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button8: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'H2O'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan21: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan22: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan23: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan1Click
+      end
+      object Pan24: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+      object Pan25: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label29: TLabel
+        Left = 424
+        Height = 73
+        Top = 64
+        Width = 107
+        Caption = 'H O'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label30: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label3: TLabel
+        Left = 464
+        Height = 52
+        Top = 85
+        Width = 24
+        Caption = '2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button9: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button10: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet6: TTabSheet
+      Caption = 'KCl'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan26: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan27: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan28: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan29: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+      object Pan30: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan1Click
+      end
+      object Label31: TLabel
+        Left = 440
+        Height = 73
+        Top = 64
+        Width = 81
+        Caption = 'KCl'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label32: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Button11: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button12: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet7: TTabSheet
+      Caption = 'K'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan31: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan32: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan33: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan34: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+      object Pan35: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label21: TLabel
+        Left = 464
+        Height = 73
+        Top = 64
+        Width = 35
+        Caption = 'K'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label49: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Button13: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button14: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet8: TTabSheet
+      Caption = 'F2'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan36: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan37: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan38: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan39: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Pan40: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label33: TLabel
+        Left = 448
+        Height = 73
+        Top = 64
+        Width = 36
+        Caption = 'F'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label34: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label4: TLabel
+        Left = 472
+        Height = 52
+        Top = 88
+        Width = 24
+        Caption = '2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button15: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button16: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet9: TTabSheet
+      Caption = 'HF'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan41: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan42: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan43: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan44: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+      object Pan45: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label35: TLabel
+        Left = 440
+        Height = 73
+        Top = 64
+        Width = 76
+        Caption = 'HF'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label36: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Button17: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button18: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet10: TTabSheet
+      Caption = 'Na'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan46: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan47: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan48: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan49: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+      object Pan50: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label50: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label51: TLabel
+        Left = 440
+        Height = 73
+        Top = 64
+        Width = 72
+        Caption = 'Na'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button19: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button20: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet11: TTabSheet
+      Caption = 'N2'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan51: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan52: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan53: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan54: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Pan55: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label37: TLabel
+        Left = 448
+        Height = 73
+        Top = 64
+        Width = 45
+        Caption = 'N'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label38: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label5: TLabel
+        Left = 488
+        Height = 52
+        Top = 88
+        Width = 24
+        Caption = '2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button21: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button22: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet12: TTabSheet
+      Caption = 'CH3OH'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan56: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan57: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan1Click
+      end
+      object Pan58: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan59: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+      object Pan60: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label39: TLabel
+        Left = 384
+        Height = 73
+        Top = 56
+        Width = 181
+        Caption = 'CH OH'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label40: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label6: TLabel
+        Left = 456
+        Height = 52
+        Top = 80
+        Width = 23
+        Caption = '3'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button23: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button24: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet13: TTabSheet
+      Caption = 'Cu'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan61: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan1Click
+      end
+      object Pan62: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan63: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan64: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+      object Pan65: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label41: TLabel
+        Left = 440
+        Height = 73
+        Top = 56
+        Width = 61
+        Caption = 'Cu'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label42: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Button25: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button26: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet14: TTabSheet
+      Caption = 'O2'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan66: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan67: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan68: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan69: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Pan70: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label43: TLabel
+        Left = 448
+        Height = 73
+        Top = 56
+        Width = 44
+        Caption = 'O'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label44: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label7: TLabel
+        Left = 488
+        Height = 52
+        Top = 80
+        Width = 24
+        Caption = '2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button27: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button28: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet15: TTabSheet
+      Caption = 'I2'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan71: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan72: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan73: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan74: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan1Click
+      end
+      object Pan75: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan2Click
+      end
+      object Label45: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label46: TLabel
+        Left = 448
+        Height = 73
+        Top = 64
+        Width = 34
+        Caption = 'I'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label8: TLabel
+        Left = 472
+        Height = 52
+        Top = 88
+        Width = 24
+        Caption = '2'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = 52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button29: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button30: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet16: TTabSheet
+      Caption = 'PbO'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Pan76: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 472
+        Width = 552
+        Caption = 'Металлическая связь'
+        Color = clSilver
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 0
+        OnClick = Pan2Click
+      end
+      object Pan77: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 584
+        Width = 552
+        Caption = 'Водородная связь'
+        Color = clWhite
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 1
+        OnClick = Pan2Click
+      end
+      object Pan78: TPanel
+        Cursor = crHandPoint
+        Left = 199
+        Height = 64
+        Top = 248
+        Width = 552
+        Caption = 'Ковалентная полярная связь'
+        Color = 2741849
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 2
+        OnClick = Pan2Click
+      end
+      object Pan79: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 136
+        Width = 552
+        Caption = 'Ковалентная неполярная связь'
+        Color = clLime
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 3
+        OnClick = Pan2Click
+      end
+      object Pan80: TPanel
+        Cursor = crHandPoint
+        Left = 200
+        Height = 64
+        Top = 360
+        Width = 552
+        Caption = 'Ионная связь'
+        Color = clYellow
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = -21
+        Font.Name = '@Arial Unicode MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Pan1Click
+      end
+      object Label47: TLabel
+        Left = 24
+        Height = 57
+        Top = 8
+        Width = 874
+        Align = alCustom
+        AutoSize = False
+        Caption = 'Определите тип связи в следующем веществе:'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Height = 46
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OptimalFill = True
+      end
+      object Label48: TLabel
+        Left = 424
+        Height = 73
+        Top = 64
+        Width = 103
+        Caption = 'PbO'
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -52
+        Font.Name = 'Comic Sans MS'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold, fsItalic]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button31: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 5
+      end
+      object Button32: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 6
+      end
+    end
+    object TabSheet17: TTabSheet
+      Caption = 'Result'
+      ClientHeight = 705
+      ClientWidth = 944
+      object Label17: TLabel
+        Left = 16
+        Height = 71
+        Top = 136
+        Width = 921
+        Caption = 'Позравляю вы выполнили работу на '
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -53
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label18: TLabel
+        Left = 344
+        Height = 89
+        Top = 288
+        Width = 36
+        Caption = '0'
+        Color = clHighlightText
+        Font.Height = -67
+        ParentColor = False
+        ParentFont = False
+        Transparent = False
+      end
+      object Label19: TLabel
+        Left = 516
+        Height = 89
+        Top = 288
+        Width = 72
+        Caption = '16'
+        Font.Height = -67
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label20: TLabel
+        Left = 426
+        Height = 89
+        Top = 288
+        Width = 80
+        Caption = 'Из'
+        Font.Height = -67
+        ParentColor = False
+        ParentFont = False
+      end
+      object Button33: TButton
+        Left = 16
+        Height = 25
+        Top = 640
+        Width = 112
+        Caption = 'Главное Меню'
+        OnClick = Button2Click
+        TabOrder = 0
+      end
+      object Button34: TButton
+        Left = 16
+        Height = 25
+        Top = 600
+        Width = 112
+        Caption = 'Тесты'
+        OnClick = Button1Click
+        TabOrder = 1
+      end
+    end
+  end
+end
