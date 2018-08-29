@@ -100,7 +100,13 @@ type
     Button86: TButton;
     Button87: TButton;
     Button88: TButton;
+    Button89: TButton;
     Button9: TButton;
+    Button90: TButton;
+    Button91: TButton;
+    Button92: TButton;
+    Button93: TButton;
+    Button94: TButton;
     Image1: TImage;
     ITOGT: TLabel;
     ITOGT1: TLabel;
@@ -195,6 +201,7 @@ type
     ITOG: TLabel;
     Label9: TLabel;
     PageControl1: TPageControl;
+    Pan1: TPanel;
     Pan10: TPanel;
     Pan100: TPanel;
     Pan101: TPanel;
@@ -372,7 +379,6 @@ type
     Pan98: TPanel;
     Pan99: TPanel;
     TabSheet1: TTabSheet;
-    Pan1: TPanel;
     TabSheet10: TTabSheet;
     TabSheet11: TTabSheet;
     TabSheet12: TTabSheet;
@@ -428,6 +434,8 @@ type
 
     procedure Pan2Click(Sender: TObject);
     procedure Pan5Click(Sender: TObject);
+    procedure TabSheet26ContextPopup(Sender: TObject; MousePos: TPoint;
+      var Handled: Boolean);
 
 
 
@@ -502,6 +510,12 @@ begin
 end;
 
 procedure TForm3.Pan5Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm3.TabSheet26ContextPopup(Sender: TObject; MousePos: TPoint;
+  var Handled: Boolean);
 begin
 
 end;

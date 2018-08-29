@@ -1,7 +1,7 @@
 object Form7: TForm7
-  Left = 644
+  Left = 202
   Height = 705
-  Top = 278
+  Top = 367
   Width = 950
   Caption = 'Определите вещество по его описанию'
   ClientHeight = 705
@@ -13,7 +13,7 @@ object Form7: TForm7
   OnHide = FormHide
   OnShow = FormShow
   Position = poDesktopCenter
-  LCLVersion = '1.8.0.6'
+  LCLVersion = '1.8.4.0'
   object PageControl1: TPageControl
     Left = 0
     Height = 1062
@@ -22093,7 +22093,7 @@ object Form7: TForm7
     Height = 41
     Top = 616
     Width = 152
-    Caption = 'Вернутться в меню'
+    Caption = 'Вернуться в меню'
     OnClick = Button2Click
     TabOrder = 2
   end

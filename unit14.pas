@@ -13,6 +13,10 @@ type
   { TForm11 }
 
   TForm11 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
     Edit1: TEdit;
     Image2: TImage;
     Image3: TImage;
@@ -25,6 +29,9 @@ type
     Label1: TLabel;
     TabSheet1: TTabSheet;
     TabSheet2: TTabSheet;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure Panel1Click(Sender: TObject);
@@ -40,7 +47,7 @@ var
   C,KP,b:integer;
   Ques,Answer,Lop:string ;
 implementation
-
+  uses Unit1,Unit2;
 {$R *.lfm}
 
 { TForm11 }
@@ -86,6 +93,24 @@ begin
  readln(F1,Ques);
 readln(F1,ANSWER);
 QUES1.Caption:=Ques;
+end;
+
+procedure TForm11.Button3Click(Sender: TObject);
+begin
+   Form11.Hide;
+  Unit2.Form2.Show;
+end;
+
+procedure TForm11.Button2Click(Sender: TObject);
+begin
+   Form11.Hide;
+  Unit1.Form1.Show;
+end;
+
+procedure TForm11.Button1Click(Sender: TObject);
+begin
+  Form11.Hide;
+  Unit2.Form2.Show;
 end;
 
 procedure TForm11.FormShow(Sender: TObject);

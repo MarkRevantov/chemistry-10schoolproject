@@ -60,7 +60,7 @@ var
   Form1: TForm1;
 
 implementation
-uses Unit2,Unit5, Unit13, Unit14;
+uses Unit2,Unit5, Unit13, Unit14, Unit16;
 
 {$R *.lfm}
 
@@ -129,7 +129,8 @@ end;
 
 procedure TForm1.PinformClick(Sender: TObject);
 begin
-
+  Unit5.Form5.Show;
+  Form1.Hide;
 end;
 
 procedure TForm1.PinformMouseMove(Sender: TObject; Shift: TShiftState; X,
@@ -157,7 +158,7 @@ end;
 
 procedure TForm1.VmaterialClick(Sender: TObject);
 begin
-  Unit5.Form5.Show;
+    Unit16.Form12.Show;
   Form1.Hide;
 
 end;

@@ -1,7 +1,7 @@
 object Form5: TForm5
-  Left = 175
+  Left = 253
   Height = 710
-  Top = 149
+  Top = 167
   Width = 1200
   Align = alLeft
   Caption = 'Полезная информация'
@@ -12,7 +12,7 @@ object Form5: TForm5
   DesignTimePPI = 120
   OnCreate = FormCreate
   Position = poDesktopCenter
-  LCLVersion = '1.8.0.6'
+  LCLVersion = '1.8.4.0'
   object PageControl1: TPageControl
     Left = 0
     Height = 710
@@ -2383,31 +2383,26 @@ object Form5: TForm5
       ClientHeight = 677
       ClientWidth = 1192
       object Memo2: TMemo
-        Left = -4
+        Left = 8
         Height = 648
-        Top = -8
-        Width = 1200
+        Top = 8
+        Width = 1184
         Anchors = [akTop, akLeft, akRight]
         Font.CharSet = ANSI_CHARSET
-        Font.Height = -47
+        Font.Height = -27
         Font.Name = 'AcadEref'
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Lines.Strings = (
-          '2                     Олимпиады'
-          'Для успешного поступления в ВУЗ, а '
-          'также для приобретения опыта и '
-          'проверки своих знаний настоятельно '
-          'советуем вам принимать участие во '
+          '                     Олимпиады'
+          'Для успешного поступления в ВУЗ, а также для приобретения опыта и проверки своих знаний настоятельно советуем вам принимать участие во '
           'всевозможных олимпиадах.'
-          'Что касается химии, вам могут оказаться '
-          'полезны следующие олимпиады:'
-          'Всероссийская олимпиада школьников '
-          'по химии (сайт http://vos.olimpiada.ru) '
-          'Московская олимпиада школьников по '
-          'химии (сайт http://moschem.olimpiada.ru/)'
-          'Всероссийская Сеченовская олимпиада ( '
-          'сайт http://moschem.olimpiada.ru/)'
+          'Что касается химии, вам могут оказаться полезны следующие олимпиады:'
+          '1) Всероссийская олимпиада школьников по химии. Сайт: http://vos.olimpiada.ru'
+          '2) Московская олимпиада школьников по химии. Сайт: http://moschem.olimpiada.ru/'
+          '3) Всероссийская Сеченовская олимпиада. Сайт: https://sechenov.ru/univers/structure/facultie/dovuz/olimpiady/'
+          'Ежегодно Минобрнауки составляет перечень олимпиад, которые дают баллы при поступлении в ВУЗы. Советуем вам следить за этой информацией на сайте http://минобрнауки.рф'
+          'Ссылка на перечень олимпиад на 2017-2018 гг https://минобрнауки.рф/m/документы/11108'
         )
         OnChange = Memo1Change
         ParentFont = False

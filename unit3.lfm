@@ -17,7 +17,7 @@ object Form3: TForm3
   OnCreate = FormCreate
   OnShow = FormShow
   Position = poDesktopCenter
-  LCLVersion = '1.8.0.6'
+  LCLVersion = '1.8.4.0'
   object Image1: TImage
     Left = 0
     Height = 1237
@@ -16257,9 +16257,9 @@ object Form3: TForm3
     Height = 1056
     Top = 8
     Width = 952
-    ActivePage = TabSheet1
+    ActivePage = TabSheet44
     ShowTabs = False
-    TabIndex = 0
+    TabIndex = 43
     TabOrder = 0
     OnChange = PageControl1Change
     object TabSheet1: TTabSheet
@@ -16508,20 +16508,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button3: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button4: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -16640,20 +16640,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button5: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button6: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -16772,20 +16772,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button7: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button8: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -16929,20 +16929,20 @@ object Form3: TForm3
         OnClick = Pan1Click
       end
       object Button9: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 5
       end
       object Button10: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 6
       end
@@ -17061,20 +17061,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button11: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button12: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -17193,20 +17193,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button13: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button14: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -17325,20 +17325,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button15: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button16: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -17457,20 +17457,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button17: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button18: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -17589,20 +17589,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button19: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button20: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -17721,20 +17721,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button21: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button22: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -17853,20 +17853,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button23: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button24: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -17985,20 +17985,20 @@ object Form3: TForm3
         OnClick = Pan1Click
       end
       object Button25: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button26: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -18117,20 +18117,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button27: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button28: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -18249,20 +18249,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button29: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button30: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -18381,20 +18381,20 @@ object Form3: TForm3
         OnClick = Pan1Click
       end
       object Button31: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button32: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -18513,20 +18513,20 @@ object Form3: TForm3
         OnClick = Pan2Click
       end
       object Button33: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button34: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -18645,20 +18645,20 @@ object Form3: TForm3
         OnClick = Pan2Click
       end
       object Button35: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button36: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -18777,20 +18777,20 @@ object Form3: TForm3
         OnClick = Pan1Click
       end
       object Button37: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button38: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -18909,20 +18909,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button39: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button40: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -19041,20 +19041,20 @@ object Form3: TForm3
         OnClick = Pan1Click
       end
       object Button41: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button42: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -19173,20 +19173,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button43: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button44: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -19305,20 +19305,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button45: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button46: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -19437,20 +19437,20 @@ object Form3: TForm3
         OnClick = Pan2Click
       end
       object Button47: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button48: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -19569,20 +19569,20 @@ object Form3: TForm3
         OnClick = Pan2Click
       end
       object Button49: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button50: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -19591,6 +19591,7 @@ object Form3: TForm3
       Caption = 'Амфотерный оксид'
       ClientHeight = 1048
       ClientWidth = 944
+      OnContextPopup = TabSheet26ContextPopup
       object Pan101: TPanel
         Cursor = crHandPoint
         Left = 199
@@ -19701,20 +19702,20 @@ object Form3: TForm3
         ParentFont = False
       end
       object Button51: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button52: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -19833,20 +19834,20 @@ object Form3: TForm3
         OnClick = Pan1Click
       end
       object Button53: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
       object Button54: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -19982,6 +19983,24 @@ object Form3: TForm3
         OnClick = Button2Click
         TabOrder = 5
       end
+      object Button59: TButton
+        Left = 784
+        Height = 41
+        Top = 512
+        Width = 144
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 6
+      end
+      object Button60: TButton
+        Left = 784
+        Height = 41
+        Top = 576
+        Width = 144
+        Caption = 'Вернуться в меню'
+        OnClick = Button2Click
+        TabOrder = 7
+      end
     end
     object TabSheet29: TTabSheet
       Caption = 'Соль'
@@ -20114,6 +20133,24 @@ object Form3: TForm3
         OnClick = Button2Click
         TabOrder = 5
       end
+      object Button61: TButton
+        Left = 784
+        Height = 41
+        Top = 512
+        Width = 144
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 6
+      end
+      object Button62: TButton
+        Left = 784
+        Height = 41
+        Top = 576
+        Width = 144
+        Caption = 'Вернуться в меню'
+        OnClick = Button2Click
+        TabOrder = 7
+      end
     end
     object TabSheet30: TTabSheet
       Caption = 'Основный оксид'
@@ -20228,21 +20265,21 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
-      object Button59: TButton
-        Left = 800
+      object Button63: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button60: TButton
-        Left = 800
+      object Button64: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -20360,21 +20397,21 @@ object Form3: TForm3
         ParentColor = False
         ParentFont = False
       end
-      object Button61: TButton
-        Left = 800
+      object Button65: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button62: TButton
-        Left = 800
+      object Button66: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -20492,21 +20529,21 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
-      object Button63: TButton
-        Left = 800
+      object Button67: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button64: TButton
-        Left = 800
+      object Button68: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -20624,21 +20661,21 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
-      object Button65: TButton
-        Left = 800
+      object Button71: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button66: TButton
-        Left = 800
+      object Button72: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -20756,21 +20793,21 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
-      object Button67: TButton
-        Left = 800
+      object Button73: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button68: TButton
-        Left = 800
+      object Button74: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -20906,6 +20943,24 @@ object Form3: TForm3
         OnClick = Button2Click
         TabOrder = 5
       end
+      object Button77: TButton
+        Left = 784
+        Height = 41
+        Top = 512
+        Width = 144
+        Caption = 'Назад'
+        OnClick = Button1Click
+        TabOrder = 6
+      end
+      object Button78: TButton
+        Left = 784
+        Height = 41
+        Top = 576
+        Width = 144
+        Caption = 'Вернуться в меню'
+        OnClick = Button2Click
+        TabOrder = 7
+      end
     end
     object TabSheet36: TTabSheet
       Caption = 'Кислотный оксид'
@@ -21020,21 +21075,21 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
-      object Button71: TButton
-        Left = 800
+      object Button79: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button72: TButton
-        Left = 800
+      object Button80: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -21152,21 +21207,21 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
-      object Button73: TButton
-        Left = 800
+      object Button81: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button74: TButton
-        Left = 800
+      object Button82: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -21284,21 +21339,21 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
-      object Button75: TButton
-        Left = 800
+      object Button83: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button76: TButton
-        Left = 800
+      object Button84: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -21386,7 +21441,7 @@ object Form3: TForm3
         Left = 419
         Height = 71
         Top = 112
-        Width = 113
+        Width = 106
         Caption = 'FeO'
         Font.CharSet = RUSSIAN_CHARSET
         Font.Height = -53
@@ -21416,21 +21471,21 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
-      object Button77: TButton
-        Left = 800
+      object Button75: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button78: TButton
-        Left = 800
+      object Button76: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -21548,21 +21603,21 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
-      object Button79: TButton
-        Left = 800
+      object Button85: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button80: TButton
-        Left = 800
+      object Button86: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -21680,21 +21735,21 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan2Click
       end
-      object Button81: TButton
-        Left = 800
+      object Button88: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button82: TButton
-        Left = 800
+      object Button89: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -21812,21 +21867,21 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
-      object Button83: TButton
-        Left = 800
+      object Button90: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button84: TButton
-        Left = 800
+      object Button91: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -21944,21 +21999,21 @@ object Form3: TForm3
         TabOrder = 3
         OnClick = Pan1Click
       end
-      object Button85: TButton
-        Left = 800
+      object Button92: TButton
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button86: TButton
-        Left = 800
+      object Button93: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end
@@ -22077,20 +22132,20 @@ object Form3: TForm3
         OnClick = Pan2Click
       end
       object Button87: TButton
-        Left = 800
+        Left = 784
         Height = 41
         Top = 512
-        Width = 115
+        Width = 144
         Caption = 'Назад'
         OnClick = Button1Click
         TabOrder = 4
       end
-      object Button88: TButton
-        Left = 800
+      object Button94: TButton
+        Left = 784
         Height = 41
         Top = 576
-        Width = 115
-        Caption = 'Вернутться в меню'
+        Width = 144
+        Caption = 'Вернуться в меню'
         OnClick = Button2Click
         TabOrder = 5
       end

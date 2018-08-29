@@ -1,13 +1,14 @@
 object Form2: TForm2
-  Left = 160
+  Left = 210
   Height = 750
-  Top = 129
+  Top = 150
   Width = 1200
   Caption = 'Тесты'
   ClientHeight = 750
   ClientWidth = 1200
   Constraints.MinHeight = 750
   Constraints.MinWidth = 950
+  DesignTimePPI = 120
   Icon.Data = {
     3E08010000000100010080800000010020002808010016000000280000008000
     0000000100000100200000000000000001006400000064000000000000000000
@@ -2127,7 +2128,7 @@ object Form2: TForm2
   }
   OnClose = FormClose
   Position = poDesktopCenter
-  LCLVersion = '1.8.0.6'
+  LCLVersion = '1.8.4.0'
   object Image1: TImage
     Left = -8
     Height = 1245
@@ -18371,7 +18372,7 @@ object Form2: TForm2
     Top = 120
     Width = 870
     Anchors = [akLeft, akRight]
-    Caption = 'Определение класса химического вещества'
+    Caption = 'Определение класса вещества (неорганическая химия)'
     Color = 16364957
     Font.CharSet = RUSSIAN_CHARSET
     Font.Height = -21
@@ -18413,7 +18414,7 @@ object Form2: TForm2
     Top = 312
     Width = 870
     Anchors = [akLeft, akRight]
-    Caption = 'Определение вещества'
+    Caption = 'Определение вещества по его описанию'
     Color = 16364957
     Font.CharSet = RUSSIAN_CHARSET
     Font.Height = -21
@@ -18449,7 +18450,7 @@ object Form2: TForm2
     Top = 408
     Width = 870
     Anchors = [akLeft, akRight]
-    Caption = 'Определение класса вещества'
+    Caption = 'Определение класса вещества (органическая химия)'
     Color = 16364957
     Font.CharSet = RUSSIAN_CHARSET
     Font.Height = -21
@@ -18470,7 +18471,7 @@ object Form2: TForm2
     Top = 504
     Width = 870
     Anchors = [akLeft, akRight]
-    Caption = 'ОВР'
+    Caption = 'Химическое равновесие'
     Color = 16364957
     Font.CharSet = RUSSIAN_CHARSET
     Font.Height = -21

@@ -1,14 +1,14 @@
 object Form10: TForm10
-  Left = 432
+  Left = 787
   Height = 700
-  Top = 166
+  Top = 230
   Width = 950
   Caption = 'О создателях'
   ClientHeight = 700
   ClientWidth = 950
   DesignTimePPI = 120
   OnCreate = FormCreate
-  LCLVersion = '1.8.0.6'
+  LCLVersion = '1.8.4.0'
   object Memo: TMemo
     Left = 16
     Height = 552
@@ -43,7 +43,7 @@ object Form10: TForm10
     Width = 950
     Align = alTop
     Alignment = taCenter
-    Caption = 'О создателя'
+    Caption = 'О создателях'
     Font.Color = clBlue
     Font.Height = -60
     Font.Name = 'Comic Sans MS'
